@@ -19,8 +19,8 @@
 		70E5EBE1DB08914289A5CB0D076E7524 /* MethodProposing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAC370A585E393886A339EDA61F323 /* MethodProposing.swift */; };
 		7D8F614ACC4D93D7CE4EA6D4E931291E /* DefaultMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F85663939F8A401DE23A29D4A9A034 /* DefaultMethodProposer.swift */; };
 		855C89BAA51F264C3ECCB4283ACF2A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
-		89EA5F35B15307EADA08064ACD16D770 /* StandardErrors.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8831941194671FA1F312FF8AE51BB /* StandardErrors.strings */; };
 		92D3CEB8400BF8CF2AAC71FDD74CD0B9 /* ErrorDispatching-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C2832A66ABE63CDA2F403561C69037 /* ErrorDispatching-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9454CA53AC680C86CEA92CCF1BD9E8BC /* StandardErrors.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA25386E6C29E59295802037472BF5FE /* StandardErrors.strings */; };
 		A6AFE7AC3499D5218F191833FDF97032 /* Pods-ErrorDispatching_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB27F5BB80DC27E08DA0044BB9F45E /* Pods-ErrorDispatching_Example-dummy.m */; };
 		AB376E54E5F1F238D6D4A9562C1A4B27 /* ErrorDispatching-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034802A57C2334A59DF094B9378BBCC /* ErrorDispatching-dummy.m */; };
 		C79BD73EB58E4AE0D815B0DEFBCE8FF0 /* UIViewController+SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B230870ED27AD157FDF8E96C9340D5 /* UIViewController+SystemAlert.swift */; };
@@ -65,11 +65,11 @@
 		44B230870ED27AD157FDF8E96C9340D5 /* UIViewController+SystemAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+SystemAlert.swift"; sourceTree = "<group>"; };
 		53E14A5E9ABA3366BFAAA558552B4A41 /* ErrorDispatching-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ErrorDispatching-prefix.pch"; sourceTree = "<group>"; };
 		5C6768B38A012E65C3516A820E69A9AF /* Pods-ErrorDispatching_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ErrorDispatching_Example-umbrella.h"; sourceTree = "<group>"; };
+		5D62959312674E445C5CE21B07186F7D /* StandardErrors.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = StandardErrors.strings; path = en.lproj/StandardErrors.strings; sourceTree = "<group>"; };
 		6034802A57C2334A59DF094B9378BBCC /* ErrorDispatching-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ErrorDispatching-dummy.m"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		65C39E9498DF8B7D06AEF81AF547CA54 /* Pods-ErrorDispatching_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ErrorDispatching_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6667700CFFDDD87D9AE36CB0ACFF3184 /* ErrorHandlingMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorHandlingMethod.swift; sourceTree = "<group>"; };
-		68580AEBA12C92E5963A871F6C663468 /* StandardErrors.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = StandardErrors.strings; path = en.lproj/StandardErrors.strings; sourceTree = "<group>"; };
 		6927685E44462F931DF462E598F41CEB /* Pods-ErrorDispatching_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ErrorDispatching_Tests.modulemap"; sourceTree = "<group>"; };
 		6F75CC071733D5EE0097670CEDE47723 /* Pods-ErrorDispatching_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ErrorDispatching_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		75AB3AAB80AD24FB2E1A5E441F318BA2 /* Pods-ErrorDispatching_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -89,6 +89,7 @@
 		C325960029EBAE512C60EDF6FB0D222F /* Pods-ErrorDispatching_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		D1FB27F5BB80DC27E08DA0044BB9F45E /* Pods-ErrorDispatching_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ErrorDispatching_Example-dummy.m"; sourceTree = "<group>"; };
 		D6CAC370A585E393886A339EDA61F323 /* MethodProposing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodProposing.swift; sourceTree = "<group>"; };
+		D9EEA1B9BAA161A924EB72CA70AFA09F /* StandardErrors.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = StandardErrors.strings; path = ru.lproj/StandardErrors.strings; sourceTree = "<group>"; };
 		DF8C49B99F5C768A663488337FE87309 /* Pods-ErrorDispatching_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ErrorDispatching_Example.modulemap"; sourceTree = "<group>"; };
 		EDF08C737CFA989F66C5A5E0A75D1461 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F85F2C3EB1A03067B32F2B9E17417F7F /* Pods_ErrorDispatching_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ErrorDispatching_Tests.framework; path = "Pods-ErrorDispatching_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -138,15 +139,6 @@
 				C71286A8619636885C4CD6EC70AA9921 /* ErrorDispatching */,
 			);
 			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		2758E7996F0E032E9CE1959B903F8731 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				4CC8831941194671FA1F312FF8AE51BB /* StandardErrors.strings */,
-			);
-			name = Assets;
-			path = Assets;
 			sourceTree = "<group>";
 		};
 		2B26F44745F5A965E0FBD70D482677C6 /* ErrorDispatching */ = {
@@ -254,6 +246,15 @@
 			);
 			sourceTree = "<group>";
 		};
+		7FFEE81E16881B9B16BD4143A107BD8B /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				CA25386E6C29E59295802037472BF5FE /* StandardErrors.strings */,
+			);
+			name = Assets;
+			path = Assets;
+			sourceTree = "<group>";
+		};
 		ACC161C01D9E67DBBF0BE11CD6AFBD89 /* Pods-ErrorDispatching_Example */ = {
 			isa = PBXGroup;
 			children = (
@@ -275,7 +276,7 @@
 		BFC3E5139D5C7D1151A6D7732E95413B /* ErrorDispatching */ = {
 			isa = PBXGroup;
 			children = (
-				2758E7996F0E032E9CE1959B903F8731 /* Assets */,
+				7FFEE81E16881B9B16BD4143A107BD8B /* Assets */,
 			);
 			name = ErrorDispatching;
 			path = ErrorDispatching;
@@ -482,7 +483,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				89EA5F35B15307EADA08064ACD16D770 /* StandardErrors.strings in Resources */,
+				9454CA53AC680C86CEA92CCF1BD9E8BC /* StandardErrors.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -548,10 +549,11 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		4CC8831941194671FA1F312FF8AE51BB /* StandardErrors.strings */ = {
+		CA25386E6C29E59295802037472BF5FE /* StandardErrors.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				68580AEBA12C92E5963A871F6C663468 /* StandardErrors.strings */,
+				5D62959312674E445C5CE21B07186F7D /* StandardErrors.strings */,
+				D9EEA1B9BAA161A924EB72CA70AFA09F /* StandardErrors.strings */,
 			);
 			name = StandardErrors.strings;
 			path = .;

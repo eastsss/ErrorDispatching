@@ -1,0 +1,34 @@
+/* 
+  StandardErrors.strings
+  ErrorDispatching
+
+  Created by Anatoliy Radchenko on 04/03/2017.
+
+*/
+
+/* Alert titles */
+
+"com.errordispatching.title.default" = "Ошибка";
+
+"com.errordispatching.title.debug" = "Отладочная ошибка";
+
+
+/* Generic alert messages */
+
+"com.errordispatching.message.default" = "Что-то пошло не так";
+
+"com.errordispatching.message.debug-format" = "Произошла ошибка: %@";
+
+
+/* Network error messages */
+
+"com.errordispatching.message.cant-find-host" = "Не получается найти хост";
+
+"com.errordispatching.message.internet-connection-lost" = "Потеряно интернет соединение";
+
+"com.errordispatching.message.session-expired" = "Ваша сессия истекла. Пожалуйста, зайдите заново";
+
+
+/* Action button titles */
+
+"com.errordispatching.action.ok" = "OK";
