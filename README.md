@@ -22,7 +22,7 @@ pod "ErrorDispatching"
 
 ## Author
 
-Anatoliy Radchenko, aradchenko@ipolecat.com
+Anatoliy Radchenko, anatox91@yandex.ru
 
 ## License
 

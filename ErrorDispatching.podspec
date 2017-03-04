@@ -21,12 +21,11 @@ Pod::Spec.new do |s|
 TODO: Add long description of the pod here.
                        DESC
 
-  s.homepage         = 'https://github.com/Anatoliy Radchenko/ErrorDispatching'
+  s.homepage         = 'https://github.com/eastsss/ErrorDispatching'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
-  s.author           = { 'Anatoliy Radchenko' => 'aradchenko@ipolecat.com' }
-  s.source           = { :git => 'https://github.com/Anatoliy Radchenko/ErrorDispatching.git', :tag => s.version.to_s }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
+  s.author           = { 'Anatoliy Radchenko' => 'anatox91@yandex.ru' }
+  s.source           = { :git => 'https://github.com/eastsss/ErrorDispatching', :tag => s.version.to_s }
 
   s.ios.deployment_target = '8.0'
 
