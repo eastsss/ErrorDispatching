@@ -1,6 +1,6 @@
 //
 //  DefaultMethodProposer.swift
-//  Pods
+//  ErrorDispatching
 //
 //  Created by Anatoliy Radchenko on 04/03/2017.
 //
@@ -14,7 +14,7 @@ public class DefaultMethodProposer: MethodProposing {
     public func proposeMethod(toHandle error: Error) -> ErrorHandlingMethod? {
         let config = SystemAlertConfiguration(
             title: StandardErrorString.title(forKey: "default"),
-            message: StandardErrorString.message(forKey: "generic"),
+            message: StandardErrorString.message(forKey: "default"),
             actionTitle: StandardErrorString.action(forKey: "ok")
         )
         

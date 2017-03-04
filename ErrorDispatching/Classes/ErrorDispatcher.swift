@@ -9,6 +9,25 @@
 import Foundation
 
 final public class ErrorDispatcher {
+    public enum TrailingProposer {
+        /**
+            No trailing proposer will be used.
+         */
+        case none
+        
+        /**
+            DefaultMethodProposer will be used as trailing one, thereby all unhandled errors will be
+            handled by showing system alert with generic message.
+         */
+        case `default`
+        
+        /**
+            DebugMethodProposer will be used as trailing one, thereby all unhandled errors will be
+            handled by showing system alert with error details.
+         */
+        case debug
+    }
+    
     public typealias MethodExecutionBlock = ((ErrorHandlingMethod) -> Void)
     
     //MARK: Public properties
@@ -18,8 +37,21 @@ final public class ErrorDispatcher {
     private let mainProposer: MethodProposing
     
     //MARK: Initializer
-    public init(mainProposer: MethodProposing) {
-        self.mainProposer = mainProposer
+    public init(mainProposer: MethodProposing, trailingProposer: TrailingProposer = .`default`) {
+        switch trailingProposer {
+        case .none:
+            self.mainProposer = mainProposer
+        case .`default`:
+            self.mainProposer = CompoundMethodProposer(proposers: [
+                mainProposer,
+                DefaultMethodProposer()
+            ])
+        case .debug:
+            self.mainProposer = CompoundMethodProposer(proposers: [
+                mainProposer,
+                DebugMethodProposer()
+            ])
+        }
     }
     
     //MARK: Error handling
@@ -30,7 +62,7 @@ final public class ErrorDispatcher {
         }
         
         guard let block = execution else {
-            print("Method execution block wasn't initialized, so all errors sent to this dispatcher will be ignored.")
+            print("Method execution block wasn't initialized, all errors sent to this dispatcher will be ignored.")
             return
         }
         

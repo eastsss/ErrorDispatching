@@ -10,6 +10,8 @@ import ErrorDispatching
 
 class MyAppMainProposer: CompoundMethodProposer {
     init() {
-        super.init(proposers: [ DebugMethodProposer() ])
+        super.init(proposers: [
+            NSURLErrorMethodProposer()
+        ])
     }
 }

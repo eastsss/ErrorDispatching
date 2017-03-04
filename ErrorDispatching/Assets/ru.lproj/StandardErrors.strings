@@ -26,6 +26,8 @@
 
 "com.errordispatching.message.internet-connection-lost" = "Потеряно интернет соединение";
 
+"com.errordispatching.message.resource-unavailable" = "Запрошенный вами ресурс недоступен в данный момент. Попробуйте позже";
+
 "com.errordispatching.message.session-expired" = "Ваша сессия истекла. Пожалуйста, зайдите заново";
 
 

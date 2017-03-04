@@ -26,6 +26,8 @@
 
 "com.errordispatching.message.internet-connection-lost" = "Internet connection lost";
 
+"com.errordispatching.message.resource-unavailable" = "Requested resource unavailable. Please try again later";
+
 "com.errordispatching.message.session-expired" = "Your session has expired. Please relogin";
 
 

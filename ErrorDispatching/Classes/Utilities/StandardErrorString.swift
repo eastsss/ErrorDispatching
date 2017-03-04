@@ -1,6 +1,6 @@
 //
 //  StandardErrorString.swift
-//  Pods
+//  ErrorDispatching
 //
 //  Created by Anatoliy Radchenko on 04/03/2017.
 //

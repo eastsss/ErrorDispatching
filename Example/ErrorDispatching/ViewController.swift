@@ -10,13 +10,14 @@ import UIKit
 import ErrorDispatching
 
 enum MyError: Error {
-    case firstCase
-    case secondCase
+    case someError
 }
 
 class ViewController: UIViewController {
 
-    let dispatcher: ErrorDispatcher = ErrorDispatcher(mainProposer: MyAppMainProposer())
+    let dispatcher: ErrorDispatcher = {
+        return ErrorDispatcher(mainProposer: MyAppMainProposer(), trailingProposer: .debug)
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -34,7 +35,11 @@ class ViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         
-        dispatcher.handle(error: MyError.firstCase)
+        /* Uncomment to test */
+        //dispatcher.handle(error: MyError.someError)
+        
+        let nsError = NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotFindHost, userInfo: nil)
+        dispatcher.handle(error: nsError)
     }
 }
 

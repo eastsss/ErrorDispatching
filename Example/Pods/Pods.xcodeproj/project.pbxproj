@@ -23,6 +23,7 @@
 		9454CA53AC680C86CEA92CCF1BD9E8BC /* StandardErrors.strings in Resources */ = {isa = PBXBuildFile; fileRef = CA25386E6C29E59295802037472BF5FE /* StandardErrors.strings */; };
 		A6AFE7AC3499D5218F191833FDF97032 /* Pods-ErrorDispatching_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB27F5BB80DC27E08DA0044BB9F45E /* Pods-ErrorDispatching_Example-dummy.m */; };
 		AB376E54E5F1F238D6D4A9562C1A4B27 /* ErrorDispatching-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034802A57C2334A59DF094B9378BBCC /* ErrorDispatching-dummy.m */; };
+		C584E69F1E6B5C8000B1ABB7 /* NSURLErrorMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E69E1E6B5C8000B1ABB7 /* NSURLErrorMethodProposer.swift */; };
 		C79BD73EB58E4AE0D815B0DEFBCE8FF0 /* UIViewController+SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B230870ED27AD157FDF8E96C9340D5 /* UIViewController+SystemAlert.swift */; };
 		D25F773FDD390545C7CEF724E2244DEA /* ErrorDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAF76CA15825B565FAC5E90A703A97 /* ErrorDispatcher.swift */; };
 		D617003592F83A86A094E780B5CB78C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
@@ -51,7 +52,7 @@
 /* Begin PBXFileReference section */
 		03AAF76CA15825B565FAC5E90A703A97 /* ErrorDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorDispatcher.swift; sourceTree = "<group>"; };
 		063963ABFC67427B9E0273968309822D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		0DAB2FF627E509CC111F642A286CE3FF /* ErrorDispatching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ErrorDispatching.framework; path = ErrorDispatching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0DAB2FF627E509CC111F642A286CE3FF /* ErrorDispatching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ErrorDispatching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		18FB5A5BD91131999870341CD2B24770 /* DebugMethodProposer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DebugMethodProposer.swift; sourceTree = "<group>"; };
 		1EA68E2C5F406876493C91C99AC11F10 /* ResourceBundle-ErrorDispatching-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ErrorDispatching-Info.plist"; sourceTree = "<group>"; };
 		22F85663939F8A401DE23A29D4A9A034 /* DefaultMethodProposer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultMethodProposer.swift; sourceTree = "<group>"; };
@@ -65,34 +66,35 @@
 		44B230870ED27AD157FDF8E96C9340D5 /* UIViewController+SystemAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+SystemAlert.swift"; sourceTree = "<group>"; };
 		53E14A5E9ABA3366BFAAA558552B4A41 /* ErrorDispatching-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ErrorDispatching-prefix.pch"; sourceTree = "<group>"; };
 		5C6768B38A012E65C3516A820E69A9AF /* Pods-ErrorDispatching_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ErrorDispatching_Example-umbrella.h"; sourceTree = "<group>"; };
-		5D62959312674E445C5CE21B07186F7D /* StandardErrors.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = StandardErrors.strings; path = en.lproj/StandardErrors.strings; sourceTree = "<group>"; };
+		5D62959312674E445C5CE21B07186F7D /* StandardErrors.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = StandardErrors.strings; path = en.lproj/StandardErrors.strings; sourceTree = "<group>"; };
 		6034802A57C2334A59DF094B9378BBCC /* ErrorDispatching-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ErrorDispatching-dummy.m"; sourceTree = "<group>"; };
 		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		65C39E9498DF8B7D06AEF81AF547CA54 /* Pods-ErrorDispatching_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ErrorDispatching_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
 		6667700CFFDDD87D9AE36CB0ACFF3184 /* ErrorHandlingMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorHandlingMethod.swift; sourceTree = "<group>"; };
-		6927685E44462F931DF462E598F41CEB /* Pods-ErrorDispatching_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ErrorDispatching_Tests.modulemap"; sourceTree = "<group>"; };
+		6927685E44462F931DF462E598F41CEB /* Pods-ErrorDispatching_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ErrorDispatching_Tests.modulemap"; sourceTree = "<group>"; };
 		6F75CC071733D5EE0097670CEDE47723 /* Pods-ErrorDispatching_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ErrorDispatching_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		75AB3AAB80AD24FB2E1A5E441F318BA2 /* Pods-ErrorDispatching_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7E85142A0EEA82A1C9CAC391C9F0ECC9 /* Pods-ErrorDispatching_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ErrorDispatching_Example-resources.sh"; sourceTree = "<group>"; };
 		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		8051843F05D8D4943C9DC6043BF9EA1F /* ErrorDispatching.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ErrorDispatching.bundle; path = ErrorDispatching.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
+		8051843F05D8D4943C9DC6043BF9EA1F /* ErrorDispatching.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ErrorDispatching.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8316CABF3C20A1C848CF390E2A59AB84 /* Pods-ErrorDispatching_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ErrorDispatching_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F2F50307AE92947912535DC84E6E19 /* Pods-ErrorDispatching_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		9B1D55CB93C21012C3434AD146A3F66B /* UIAlertController+Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Configuration.swift"; sourceTree = "<group>"; };
 		A0155A82646CC4236A3C3B9CAF067152 /* ErrorDispatching.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ErrorDispatching.xcconfig; sourceTree = "<group>"; };
-		A21477CBA0ACC10BE54C14E33A216122 /* ErrorDispatching.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ErrorDispatching.modulemap; sourceTree = "<group>"; };
+		A21477CBA0ACC10BE54C14E33A216122 /* ErrorDispatching.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ErrorDispatching.modulemap; sourceTree = "<group>"; };
 		A6CB994602CA0973EA47BFC36E0D354E /* Pods-ErrorDispatching_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ErrorDispatching_Tests-frameworks.sh"; sourceTree = "<group>"; };
 		B4C2832A66ABE63CDA2F403561C69037 /* ErrorDispatching-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ErrorDispatching-umbrella.h"; sourceTree = "<group>"; };
 		B795DBA7C29D605808F3BCA6E0AF559C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		B8FFC780162DB934B0A9D53823F3A881 /* Pods_ErrorDispatching_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ErrorDispatching_Example.framework; path = "Pods-ErrorDispatching_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B8FFC780162DB934B0A9D53823F3A881 /* Pods_ErrorDispatching_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErrorDispatching_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		C325960029EBAE512C60EDF6FB0D222F /* Pods-ErrorDispatching_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		C584E69E1E6B5C8000B1ABB7 /* NSURLErrorMethodProposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSURLErrorMethodProposer.swift; sourceTree = "<group>"; };
 		D1FB27F5BB80DC27E08DA0044BB9F45E /* Pods-ErrorDispatching_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ErrorDispatching_Example-dummy.m"; sourceTree = "<group>"; };
 		D6CAC370A585E393886A339EDA61F323 /* MethodProposing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodProposing.swift; sourceTree = "<group>"; };
-		D9EEA1B9BAA161A924EB72CA70AFA09F /* StandardErrors.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = StandardErrors.strings; path = ru.lproj/StandardErrors.strings; sourceTree = "<group>"; };
-		DF8C49B99F5C768A663488337FE87309 /* Pods-ErrorDispatching_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ErrorDispatching_Example.modulemap"; sourceTree = "<group>"; };
+		D9EEA1B9BAA161A924EB72CA70AFA09F /* StandardErrors.strings */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.strings; name = StandardErrors.strings; path = ru.lproj/StandardErrors.strings; sourceTree = "<group>"; };
+		DF8C49B99F5C768A663488337FE87309 /* Pods-ErrorDispatching_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ErrorDispatching_Example.modulemap"; sourceTree = "<group>"; };
 		EDF08C737CFA989F66C5A5E0A75D1461 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F85F2C3EB1A03067B32F2B9E17417F7F /* Pods_ErrorDispatching_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ErrorDispatching_Tests.framework; path = "Pods-ErrorDispatching_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F85F2C3EB1A03067B32F2B9E17417F7F /* Pods_ErrorDispatching_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErrorDispatching_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89CCE2D230962180ABE64F8EA18271B /* Pods-ErrorDispatching_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ErrorDispatching_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FB12F67CF8B3C4054EFDDBB546577D2A /* Pods-ErrorDispatching_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -146,7 +148,6 @@
 			children = (
 				4E9BC0927630DA49312B141224008CCE /* Classes */,
 			);
-			name = ErrorDispatching;
 			path = ErrorDispatching;
 			sourceTree = "<group>";
 		};
@@ -182,7 +183,6 @@
 				7254D5B40FACC8F273A6F7F6CF6B19C9 /* SystemAlerts */,
 				6DCCC252CA1A56ACCBB3540125F01708 /* Utilities */,
 			);
-			name = Classes;
 			path = Classes;
 			sourceTree = "<group>";
 		};
@@ -193,8 +193,8 @@
 				18FB5A5BD91131999870341CD2B24770 /* DebugMethodProposer.swift */,
 				22F85663939F8A401DE23A29D4A9A034 /* DefaultMethodProposer.swift */,
 				D6CAC370A585E393886A339EDA61F323 /* MethodProposing.swift */,
+				C584E69E1E6B5C8000B1ABB7 /* NSURLErrorMethodProposer.swift */,
 			);
-			name = MethodProposers;
 			path = MethodProposers;
 			sourceTree = "<group>";
 		};
@@ -220,7 +220,6 @@
 			children = (
 				3D5475A3DE11FC69C11F5464969009EF /* StandardErrorString.swift */,
 			);
-			name = Utilities;
 			path = Utilities;
 			sourceTree = "<group>";
 		};
@@ -231,7 +230,6 @@
 				9B1D55CB93C21012C3434AD146A3F66B /* UIAlertController+Configuration.swift */,
 				44B230870ED27AD157FDF8E96C9340D5 /* UIViewController+SystemAlert.swift */,
 			);
-			name = SystemAlerts;
 			path = SystemAlerts;
 			sourceTree = "<group>";
 		};
@@ -251,7 +249,6 @@
 			children = (
 				CA25386E6C29E59295802037472BF5FE /* StandardErrors.strings */,
 			);
-			name = Assets;
 			path = Assets;
 			sourceTree = "<group>";
 		};
@@ -278,7 +275,6 @@
 			children = (
 				7FFEE81E16881B9B16BD4143A107BD8B /* Assets */,
 			);
-			name = ErrorDispatching;
 			path = ErrorDispatching;
 			sourceTree = "<group>";
 		};
@@ -336,7 +332,6 @@
 			children = (
 				6667700CFFDDD87D9AE36CB0ACFF3184 /* ErrorHandlingMethod.swift */,
 			);
-			name = HandlingMethods;
 			path = HandlingMethods;
 			sourceTree = "<group>";
 		};
@@ -519,6 +514,7 @@
 			files = (
 				D93B9A1797B4F4D5C70AB5740D323145 /* CompoundMethodProposer.swift in Sources */,
 				2CAB8C75D26CEC865A78AB428E6B02ED /* DebugMethodProposer.swift in Sources */,
+				C584E69F1E6B5C8000B1ABB7 /* NSURLErrorMethodProposer.swift in Sources */,
 				7D8F614ACC4D93D7CE4EA6D4E931291E /* DefaultMethodProposer.swift in Sources */,
 				D25F773FDD390545C7CEF724E2244DEA /* ErrorDispatcher.swift in Sources */,
 				AB376E54E5F1F238D6D4A9562C1A4B27 /* ErrorDispatching-dummy.m in Sources */,
