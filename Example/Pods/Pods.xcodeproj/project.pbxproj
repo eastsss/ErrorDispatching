@@ -13,6 +13,15 @@
 		73419F23CBF91D408E834B9DC0A278FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		A6AFE7AC3499D5218F191833FDF97032 /* Pods-ErrorDispatching_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB27F5BB80DC27E08DA0044BB9F45E /* Pods-ErrorDispatching_Example-dummy.m */; };
 		C584E6781E6AE41B00B1ABB7 /* ErrorDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6771E6AE41B00B1ABB7 /* ErrorDispatcher.swift */; };
+		C584E67C1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E67B1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift */; };
+		C584E6821E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6811E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift */; };
+		C584E6841E6AF60500B1ABB7 /* MethodProposing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6831E6AF60500B1ABB7 /* MethodProposing.swift */; };
+		C584E6871E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6861E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift */; };
+		C584E6891E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6881E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift */; };
+		C584E68B1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E68A1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift */; };
+		C584E68F1E6B05F900B1ABB7 /* DebugMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E68E1E6B05F900B1ABB7 /* DebugMethodProposer.swift */; };
+		C584E6971E6B1D6700B1ABB7 /* StandardErrorString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6961E6B1D6700B1ABB7 /* StandardErrorString.swift */; };
+		C584E6991E6B208F00B1ABB7 /* DefaultMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6981E6B208F00B1ABB7 /* DefaultMethodProposer.swift */; };
 		D617003592F83A86A094E780B5CB78C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
 		FBEE7EDF9DA45160975BC9080C0FEAA2 /* Pods-ErrorDispatching_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC6BC0CA220D6CDDEB35D6FEAF93F4 /* Pods-ErrorDispatching_Tests-dummy.m */; };
 		FCB489AB160D41DD8A22DC7C328A2A50 /* Pods-ErrorDispatching_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41260C1CCB8A6DB285B92D0C8E11C0B7 /* Pods-ErrorDispatching_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
@@ -54,6 +63,16 @@
 		B795DBA7C29D605808F3BCA6E0AF559C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		C325960029EBAE512C60EDF6FB0D222F /* Pods-ErrorDispatching_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		C584E6771E6AE41B00B1ABB7 /* ErrorDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDispatcher.swift; sourceTree = "<group>"; };
+		C584E67B1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlingMethod.swift; sourceTree = "<group>"; };
+		C584E6811E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundMethodProposer.swift; sourceTree = "<group>"; };
+		C584E6831E6AF60500B1ABB7 /* MethodProposing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodProposing.swift; sourceTree = "<group>"; };
+		C584E6861E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemAlertConfiguration.swift; sourceTree = "<group>"; };
+		C584E6881E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Configuration.swift"; sourceTree = "<group>"; };
+		C584E68A1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SystemAlert.swift"; sourceTree = "<group>"; };
+		C584E68E1E6B05F900B1ABB7 /* DebugMethodProposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMethodProposer.swift; sourceTree = "<group>"; };
+		C584E6931E6B19CE00B1ABB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StandardErrors.strings; sourceTree = "<group>"; };
+		C584E6961E6B1D6700B1ABB7 /* StandardErrorString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardErrorString.swift; sourceTree = "<group>"; };
+		C584E6981E6B208F00B1ABB7 /* DefaultMethodProposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMethodProposer.swift; sourceTree = "<group>"; };
 		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D01B1BF610056E410146A210D6C07198 /* ErrorDispatching.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ErrorDispatching.modulemap; sourceTree = "<group>"; };
 		D1FB27F5BB80DC27E08DA0044BB9F45E /* Pods-ErrorDispatching_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ErrorDispatching_Example-dummy.m"; sourceTree = "<group>"; };
@@ -105,6 +124,10 @@
 		2EDC32BDF81B645814663C569B09686B /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C584E6951E6B1D0B00B1ABB7 /* Utilities */,
+				C584E6851E6AF88600B1ABB7 /* SystemAlerts */,
+				C584E67A1E6AE9DD00B1ABB7 /* MethodProposers */,
+				C584E6791E6AE9D700B1ABB7 /* HandlingMethods */,
 				C584E6771E6AE41B00B1ABB7 /* ErrorDispatcher.swift */,
 			);
 			path = Classes;
@@ -165,6 +188,7 @@
 		98BDC6E3CFC9A237E05A068E5A128CCF /* ErrorDispatching */ = {
 			isa = PBXGroup;
 			children = (
+				C584E6901E6B194200B1ABB7 /* Assets */,
 				2EDC32BDF81B645814663C569B09686B /* Classes */,
 			);
 			path = ErrorDispatching;
@@ -202,6 +226,51 @@
 				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		C584E6791E6AE9D700B1ABB7 /* HandlingMethods */ = {
+			isa = PBXGroup;
+			children = (
+				C584E67B1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift */,
+			);
+			path = HandlingMethods;
+			sourceTree = "<group>";
+		};
+		C584E67A1E6AE9DD00B1ABB7 /* MethodProposers */ = {
+			isa = PBXGroup;
+			children = (
+				C584E6831E6AF60500B1ABB7 /* MethodProposing.swift */,
+				C584E6811E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift */,
+				C584E68E1E6B05F900B1ABB7 /* DebugMethodProposer.swift */,
+				C584E6981E6B208F00B1ABB7 /* DefaultMethodProposer.swift */,
+			);
+			path = MethodProposers;
+			sourceTree = "<group>";
+		};
+		C584E6851E6AF88600B1ABB7 /* SystemAlerts */ = {
+			isa = PBXGroup;
+			children = (
+				C584E6861E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift */,
+				C584E6881E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift */,
+				C584E68A1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift */,
+			);
+			path = SystemAlerts;
+			sourceTree = "<group>";
+		};
+		C584E6901E6B194200B1ABB7 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				C584E6941E6B19CE00B1ABB7 /* StandardErrors.strings */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		C584E6951E6B1D0B00B1ABB7 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				C584E6961E6B1D6700B1ABB7 /* StandardErrorString.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 		EFDE7921788366550D311BF411491D71 /* Pods-ErrorDispatching_Tests */ = {
@@ -358,8 +427,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C584E67C1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift in Sources */,
+				C584E6971E6B1D6700B1ABB7 /* StandardErrorString.swift in Sources */,
 				1487BDF4201A3D3EC8F33FBBF5B3DFD1 /* ErrorDispatching-dummy.m in Sources */,
+				C584E68B1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift in Sources */,
+				C584E6871E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift in Sources */,
+				C584E6841E6AF60500B1ABB7 /* MethodProposing.swift in Sources */,
+				C584E6821E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift in Sources */,
+				C584E6991E6B208F00B1ABB7 /* DefaultMethodProposer.swift in Sources */,
 				C584E6781E6AE41B00B1ABB7 /* ErrorDispatcher.swift in Sources */,
+				C584E68F1E6B05F900B1ABB7 /* DebugMethodProposer.swift in Sources */,
+				C584E6891E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,6 +451,17 @@
 			targetProxy = CCE0BDBAE02CAF44D20C374CBDC7B5BB /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		C584E6941E6B19CE00B1ABB7 /* StandardErrors.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				C584E6931E6B19CE00B1ABB7 /* en */,
+			);
+			name = StandardErrors.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		1D5F586B902F65C11BCEB1A5F8766727 /* Release */ = {

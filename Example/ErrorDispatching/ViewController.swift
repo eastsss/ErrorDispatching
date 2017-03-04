@@ -7,18 +7,34 @@
 //
 
 import UIKit
+import ErrorDispatching
+
+enum MyError: Error {
+    case firstCase
+    case secondCase
+}
 
 class ViewController: UIViewController {
 
+    let dispatcher: ErrorDispatcher = ErrorDispatcher(mainProposer: MyAppMainProposer())
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        dispatcher.execution = { [unowned self] method in
+            switch method {
+            case .systemAlert(let config):
+                self.showSystemAlert(with: config)
+            default:
+                return
+            }
+        }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        
+        dispatcher.handle(error: MyError.firstCase)
     }
-
 }
 

@@ -31,11 +31,11 @@ TODO: Add long description of the pod here.
 
   s.source_files = 'ErrorDispatching/Classes/**/*'
   
-  # s.resource_bundles = {
-  #   'ErrorDispatching' => ['ErrorDispatching/Assets/*.png']
-  # }
+  s.resource_bundles = {
+    'ErrorDispatching' => ['ErrorDispatching/Assets/**/*.{strings}']
+  }
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
+  s.frameworks = 'UIKit'
   # s.dependency 'AFNetworking', '~> 2.3'
 end

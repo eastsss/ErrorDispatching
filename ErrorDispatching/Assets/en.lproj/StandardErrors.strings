@@ -1,0 +1,34 @@
+/* 
+  StandardErrors.strings
+  ErrorDispatching
+
+  Created by Anatoliy Radchenko on 04/03/2017.
+
+*/
+
+/* Alert titles */
+
+"com.errordispatching.title.default" = "Error";
+
+"com.errordispatching.title.debug" = "Debug Error";
+
+
+/* Generic alert messages */
+
+"com.errordispatching.message.default" = "Something went wrong";
+
+"com.errordispatching.message.debug-format" = "Error occured: %@";
+
+
+/* Network error messages */
+
+"com.errordispatching.message.cant-find-host" = "Can't find host";
+
+"com.errordispatching.message.internet-connection-lost" = "Internet connection lost";
+
+"com.errordispatching.message.session-expired" = "Your session has expired. Please relogin";
+
+
+/* Action button titles */
+
+"com.errordispatching.action.ok" = "OK";
