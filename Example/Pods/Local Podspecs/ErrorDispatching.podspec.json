@@ -1,0 +1,22 @@
+{
+  "name": "ErrorDispatching",
+  "version": "0.1.0",
+  "summary": "A short description of ErrorDispatching.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/Anatoliy Radchenko/ErrorDispatching",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Anatoliy Radchenko": "aradchenko@ipolecat.com"
+  },
+  "source": {
+    "git": "https://github.com/Anatoliy Radchenko/ErrorDispatching.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "ErrorDispatching/Classes/**/*"
+}

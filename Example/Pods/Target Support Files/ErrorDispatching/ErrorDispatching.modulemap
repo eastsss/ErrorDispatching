@@ -1,0 +1,6 @@
+framework module ErrorDispatching {
+  umbrella header "ErrorDispatching-umbrella.h"
+
+  export *
+  module * { export * }
+}

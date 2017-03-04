@@ -1,0 +1,16 @@
+PODS:
+  - ErrorDispatching (0.1.0)
+
+DEPENDENCIES:
+  - ErrorDispatching (from `../`)
+
+EXTERNAL SOURCES:
+  ErrorDispatching:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  ErrorDispatching: 22be96e8eddfb05cb06583f82283d7f578f35c21
+
+PODFILE CHECKSUM: 39f320aae2acd9684f6abbdda2ece7e5af61743e
+
+COCOAPODS: 1.2.0
