@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'ErrorDispatching_Example' do
+  pod 'ErrorDispatching', :path => '../'
+
+  target 'ErrorDispatching_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end
