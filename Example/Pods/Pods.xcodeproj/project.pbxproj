@@ -8,87 +8,108 @@
 
 /* Begin PBXBuildFile section */
 		00865A8C4B6761093FBDCD22AECF2F83 /* Pods-ErrorDispatching_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 5C6768B38A012E65C3516A820E69A9AF /* Pods-ErrorDispatching_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		1487BDF4201A3D3EC8F33FBBF5B3DFD1 /* ErrorDispatching-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 94DB04D9299132D142AFEB37BF52BCC3 /* ErrorDispatching-dummy.m */; };
-		528B5F764209F7D87B0940D078A32985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
-		73419F23CBF91D408E834B9DC0A278FE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		12E0B2F42325C5F0A128176F0483E2F7 /* ErrorDispatching.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 8051843F05D8D4943C9DC6043BF9EA1F /* ErrorDispatching.bundle */; };
+		2B0BF05A3688CCFDDCC9A2D27A3EAA00 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		2CAB8C75D26CEC865A78AB428E6B02ED /* DebugMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18FB5A5BD91131999870341CD2B24770 /* DebugMethodProposer.swift */; };
+		3159B01EE76B0523A6E8A496C403F572 /* StandardErrorString.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3D5475A3DE11FC69C11F5464969009EF /* StandardErrorString.swift */; };
+		35DB9FC56A09B2401EA697605F73C703 /* SystemAlertConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 250E8E53AC91F1551DEBE7671E451948 /* SystemAlertConfiguration.swift */; };
+		42189B953FC0D38FFB3FB2C5A488191D /* ErrorHandlingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6667700CFFDDD87D9AE36CB0ACFF3184 /* ErrorHandlingMethod.swift */; };
+		528B5F764209F7D87B0940D078A32985 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		5F197E153F49326DEC6D8B2BB96EE6F3 /* UIAlertController+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9B1D55CB93C21012C3434AD146A3F66B /* UIAlertController+Configuration.swift */; };
+		70E5EBE1DB08914289A5CB0D076E7524 /* MethodProposing.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6CAC370A585E393886A339EDA61F323 /* MethodProposing.swift */; };
+		7D8F614ACC4D93D7CE4EA6D4E931291E /* DefaultMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 22F85663939F8A401DE23A29D4A9A034 /* DefaultMethodProposer.swift */; };
+		855C89BAA51F264C3ECCB4283ACF2A68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */; };
+		89EA5F35B15307EADA08064ACD16D770 /* StandardErrors.strings in Resources */ = {isa = PBXBuildFile; fileRef = 4CC8831941194671FA1F312FF8AE51BB /* StandardErrors.strings */; };
+		92D3CEB8400BF8CF2AAC71FDD74CD0B9 /* ErrorDispatching-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4C2832A66ABE63CDA2F403561C69037 /* ErrorDispatching-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		A6AFE7AC3499D5218F191833FDF97032 /* Pods-ErrorDispatching_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D1FB27F5BB80DC27E08DA0044BB9F45E /* Pods-ErrorDispatching_Example-dummy.m */; };
-		C584E6781E6AE41B00B1ABB7 /* ErrorDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6771E6AE41B00B1ABB7 /* ErrorDispatcher.swift */; };
-		C584E67C1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E67B1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift */; };
-		C584E6821E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6811E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift */; };
-		C584E6841E6AF60500B1ABB7 /* MethodProposing.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6831E6AF60500B1ABB7 /* MethodProposing.swift */; };
-		C584E6871E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6861E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift */; };
-		C584E6891E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6881E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift */; };
-		C584E68B1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E68A1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift */; };
-		C584E68F1E6B05F900B1ABB7 /* DebugMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E68E1E6B05F900B1ABB7 /* DebugMethodProposer.swift */; };
-		C584E6971E6B1D6700B1ABB7 /* StandardErrorString.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6961E6B1D6700B1ABB7 /* StandardErrorString.swift */; };
-		C584E6991E6B208F00B1ABB7 /* DefaultMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = C584E6981E6B208F00B1ABB7 /* DefaultMethodProposer.swift */; };
-		D617003592F83A86A094E780B5CB78C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */; };
+		AB376E54E5F1F238D6D4A9562C1A4B27 /* ErrorDispatching-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 6034802A57C2334A59DF094B9378BBCC /* ErrorDispatching-dummy.m */; };
+		C79BD73EB58E4AE0D815B0DEFBCE8FF0 /* UIViewController+SystemAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44B230870ED27AD157FDF8E96C9340D5 /* UIViewController+SystemAlert.swift */; };
+		D25F773FDD390545C7CEF724E2244DEA /* ErrorDispatcher.swift in Sources */ = {isa = PBXBuildFile; fileRef = 03AAF76CA15825B565FAC5E90A703A97 /* ErrorDispatcher.swift */; };
+		D617003592F83A86A094E780B5CB78C0 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */; };
+		D93B9A1797B4F4D5C70AB5740D323145 /* CompoundMethodProposer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C141DE8D20CBEE18B1E51ED53D6B44A /* CompoundMethodProposer.swift */; };
 		FBEE7EDF9DA45160975BC9080C0FEAA2 /* Pods-ErrorDispatching_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 31EC6BC0CA220D6CDDEB35D6FEAF93F4 /* Pods-ErrorDispatching_Tests-dummy.m */; };
 		FCB489AB160D41DD8A22DC7C328A2A50 /* Pods-ErrorDispatching_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 41260C1CCB8A6DB285B92D0C8E11C0B7 /* Pods-ErrorDispatching_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		FE774302E38B37022FBDA12D841EFCB5 /* ErrorDispatching-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 32EDFEB4AFBDB7DD863C55DC309A0004 /* ErrorDispatching-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		000FE860DA7A5696578489B55F094512 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8CC532C49DA2F4218A9EC7B4337CA34A;
+			remoteInfo = "ErrorDispatching-ErrorDispatching";
+		};
 		CCE0BDBAE02CAF44D20C374CBDC7B5BB /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 11333F966024011F3426F3242017FB6D;
+			remoteGlobalIDString = DFEA143E97C5A8692E5C195B26FAB263;
 			remoteInfo = ErrorDispatching;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		12476E2619EDE7EF8EA954D743C29B2F /* Pods_ErrorDispatching_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErrorDispatching_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		24F4322B315A7553774FC4D66979444B /* ErrorDispatching-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ErrorDispatching-prefix.pch"; sourceTree = "<group>"; };
+		03AAF76CA15825B565FAC5E90A703A97 /* ErrorDispatcher.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorDispatcher.swift; sourceTree = "<group>"; };
+		063963ABFC67427B9E0273968309822D /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0DAB2FF627E509CC111F642A286CE3FF /* ErrorDispatching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = ErrorDispatching.framework; path = ErrorDispatching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		18FB5A5BD91131999870341CD2B24770 /* DebugMethodProposer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DebugMethodProposer.swift; sourceTree = "<group>"; };
+		1EA68E2C5F406876493C91C99AC11F10 /* ResourceBundle-ErrorDispatching-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "ResourceBundle-ErrorDispatching-Info.plist"; sourceTree = "<group>"; };
+		22F85663939F8A401DE23A29D4A9A034 /* DefaultMethodProposer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = DefaultMethodProposer.swift; sourceTree = "<group>"; };
+		250E8E53AC91F1551DEBE7671E451948 /* SystemAlertConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SystemAlertConfiguration.swift; sourceTree = "<group>"; };
+		2C141DE8D20CBEE18B1E51ED53D6B44A /* CompoundMethodProposer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CompoundMethodProposer.swift; sourceTree = "<group>"; };
 		31EC6BC0CA220D6CDDEB35D6FEAF93F4 /* Pods-ErrorDispatching_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ErrorDispatching_Tests-dummy.m"; sourceTree = "<group>"; };
-		32EDFEB4AFBDB7DD863C55DC309A0004 /* ErrorDispatching-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ErrorDispatching-umbrella.h"; sourceTree = "<group>"; };
+		3D5475A3DE11FC69C11F5464969009EF /* StandardErrorString.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = StandardErrorString.swift; sourceTree = "<group>"; };
 		41260C1CCB8A6DB285B92D0C8E11C0B7 /* Pods-ErrorDispatching_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ErrorDispatching_Tests-umbrella.h"; sourceTree = "<group>"; };
 		421B85A2A580C85B993B94D129DF5432 /* Pods-ErrorDispatching_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ErrorDispatching_Tests-resources.sh"; sourceTree = "<group>"; };
 		44761C23FAAB992604CF3712F3893271 /* Pods-ErrorDispatching_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ErrorDispatching_Example-frameworks.sh"; sourceTree = "<group>"; };
+		44B230870ED27AD157FDF8E96C9340D5 /* UIViewController+SystemAlert.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIViewController+SystemAlert.swift"; sourceTree = "<group>"; };
+		53E14A5E9ABA3366BFAAA558552B4A41 /* ErrorDispatching-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ErrorDispatching-prefix.pch"; sourceTree = "<group>"; };
 		5C6768B38A012E65C3516A820E69A9AF /* Pods-ErrorDispatching_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ErrorDispatching_Example-umbrella.h"; sourceTree = "<group>"; };
+		6034802A57C2334A59DF094B9378BBCC /* ErrorDispatching-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ErrorDispatching-dummy.m"; sourceTree = "<group>"; };
+		616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		65C39E9498DF8B7D06AEF81AF547CA54 /* Pods-ErrorDispatching_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ErrorDispatching_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		68BB87E75093624EFD20BB4F0F201E0A /* Pods_ErrorDispatching_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ErrorDispatching_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6927685E44462F931DF462E598F41CEB /* Pods-ErrorDispatching_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ErrorDispatching_Tests.modulemap"; sourceTree = "<group>"; };
+		6667700CFFDDD87D9AE36CB0ACFF3184 /* ErrorHandlingMethod.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = ErrorHandlingMethod.swift; sourceTree = "<group>"; };
+		68580AEBA12C92E5963A871F6C663468 /* StandardErrors.strings */ = {isa = PBXFileReference; includeInIndex = 1; name = StandardErrors.strings; path = en.lproj/StandardErrors.strings; sourceTree = "<group>"; };
+		6927685E44462F931DF462E598F41CEB /* Pods-ErrorDispatching_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ErrorDispatching_Tests.modulemap"; sourceTree = "<group>"; };
 		6F75CC071733D5EE0097670CEDE47723 /* Pods-ErrorDispatching_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ErrorDispatching_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
 		75AB3AAB80AD24FB2E1A5E441F318BA2 /* Pods-ErrorDispatching_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Example.release.xcconfig"; sourceTree = "<group>"; };
 		7E85142A0EEA82A1C9CAC391C9F0ECC9 /* Pods-ErrorDispatching_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ErrorDispatching_Example-resources.sh"; sourceTree = "<group>"; };
+		7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8051843F05D8D4943C9DC6043BF9EA1F /* ErrorDispatching.bundle */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; name = ErrorDispatching.bundle; path = ErrorDispatching.bundle; sourceTree = BUILT_PRODUCTS_DIR; };
 		8316CABF3C20A1C848CF390E2A59AB84 /* Pods-ErrorDispatching_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ErrorDispatching_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		93F2F50307AE92947912535DC84E6E19 /* Pods-ErrorDispatching_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		94DB04D9299132D142AFEB37BF52BCC3 /* ErrorDispatching-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "ErrorDispatching-dummy.m"; sourceTree = "<group>"; };
-		95CEEB078703BD066CC1342916414110 /* ErrorDispatching.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ErrorDispatching.xcconfig; sourceTree = "<group>"; };
-		99D95BC3F087C1546C19CE323386BBB2 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9B1D55CB93C21012C3434AD146A3F66B /* UIAlertController+Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Configuration.swift"; sourceTree = "<group>"; };
+		A0155A82646CC4236A3C3B9CAF067152 /* ErrorDispatching.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ErrorDispatching.xcconfig; sourceTree = "<group>"; };
+		A21477CBA0ACC10BE54C14E33A216122 /* ErrorDispatching.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = ErrorDispatching.modulemap; sourceTree = "<group>"; };
 		A6CB994602CA0973EA47BFC36E0D354E /* Pods-ErrorDispatching_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-ErrorDispatching_Tests-frameworks.sh"; sourceTree = "<group>"; };
+		B4C2832A66ABE63CDA2F403561C69037 /* ErrorDispatching-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "ErrorDispatching-umbrella.h"; sourceTree = "<group>"; };
 		B795DBA7C29D605808F3BCA6E0AF559C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B8FFC780162DB934B0A9D53823F3A881 /* Pods_ErrorDispatching_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ErrorDispatching_Example.framework; path = "Pods-ErrorDispatching_Example.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		C325960029EBAE512C60EDF6FB0D222F /* Pods-ErrorDispatching_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		C584E6771E6AE41B00B1ABB7 /* ErrorDispatcher.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorDispatcher.swift; sourceTree = "<group>"; };
-		C584E67B1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ErrorHandlingMethod.swift; sourceTree = "<group>"; };
-		C584E6811E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompoundMethodProposer.swift; sourceTree = "<group>"; };
-		C584E6831E6AF60500B1ABB7 /* MethodProposing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MethodProposing.swift; sourceTree = "<group>"; };
-		C584E6861E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SystemAlertConfiguration.swift; sourceTree = "<group>"; };
-		C584E6881E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Configuration.swift"; sourceTree = "<group>"; };
-		C584E68A1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+SystemAlert.swift"; sourceTree = "<group>"; };
-		C584E68E1E6B05F900B1ABB7 /* DebugMethodProposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DebugMethodProposer.swift; sourceTree = "<group>"; };
-		C584E6931E6B19CE00B1ABB7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/StandardErrors.strings; sourceTree = "<group>"; };
-		C584E6961E6B1D6700B1ABB7 /* StandardErrorString.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardErrorString.swift; sourceTree = "<group>"; };
-		C584E6981E6B208F00B1ABB7 /* DefaultMethodProposer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DefaultMethodProposer.swift; sourceTree = "<group>"; };
-		CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		D01B1BF610056E410146A210D6C07198 /* ErrorDispatching.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = ErrorDispatching.modulemap; sourceTree = "<group>"; };
 		D1FB27F5BB80DC27E08DA0044BB9F45E /* Pods-ErrorDispatching_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ErrorDispatching_Example-dummy.m"; sourceTree = "<group>"; };
-		DE23F2F1514C3D62177C6E3EDF6EAD4E /* ErrorDispatching.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ErrorDispatching.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		DF8C49B99F5C768A663488337FE87309 /* Pods-ErrorDispatching_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-ErrorDispatching_Example.modulemap"; sourceTree = "<group>"; };
+		D6CAC370A585E393886A339EDA61F323 /* MethodProposing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = MethodProposing.swift; sourceTree = "<group>"; };
+		DF8C49B99F5C768A663488337FE87309 /* Pods-ErrorDispatching_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; path = "Pods-ErrorDispatching_Example.modulemap"; sourceTree = "<group>"; };
 		EDF08C737CFA989F66C5A5E0A75D1461 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F85F2C3EB1A03067B32F2B9E17417F7F /* Pods_ErrorDispatching_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Pods_ErrorDispatching_Tests.framework; path = "Pods-ErrorDispatching_Tests.framework"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F89CCE2D230962180ABE64F8EA18271B /* Pods-ErrorDispatching_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ErrorDispatching_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		FB12F67CF8B3C4054EFDDBB546577D2A /* Pods-ErrorDispatching_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ErrorDispatching_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		28E266E2E0D7123EC058799A29FCC444 /* Frameworks */ = {
+		8D04D14D859139EA39BB715778073DF8 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73419F23CBF91D408E834B9DC0A278FE /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AE0CA7750E899D7910358E40A4718A16 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2B0BF05A3688CCFDDCC9A2D27A3EAA00 /* Foundation.framework in Frameworks */,
+				855C89BAA51F264C3ECCB4283ACF2A68 /* UIKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,40 +132,86 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1F367922F27524534AD4469F1B212ED6 /* ErrorDispatching */ = {
+		20D32B3481C76EDB479E37AD6EACC95A /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				98BDC6E3CFC9A237E05A068E5A128CCF /* ErrorDispatching */,
-				4A5687E719647C7EABCF15519722F8D6 /* Support Files */,
+				C71286A8619636885C4CD6EC70AA9921 /* ErrorDispatching */,
+			);
+			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		2758E7996F0E032E9CE1959B903F8731 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				4CC8831941194671FA1F312FF8AE51BB /* StandardErrors.strings */,
+			);
+			name = Assets;
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		2B26F44745F5A965E0FBD70D482677C6 /* ErrorDispatching */ = {
+			isa = PBXGroup;
+			children = (
+				4E9BC0927630DA49312B141224008CCE /* Classes */,
 			);
 			name = ErrorDispatching;
-			path = ../..;
+			path = ErrorDispatching;
 			sourceTree = "<group>";
 		};
-		2EDC32BDF81B645814663C569B09686B /* Classes */ = {
+		2BAC7D0B24CCBC799C2BB97DA7D43408 /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				C584E6951E6B1D0B00B1ABB7 /* Utilities */,
-				C584E6851E6AF88600B1ABB7 /* SystemAlerts */,
-				C584E67A1E6AE9DD00B1ABB7 /* MethodProposers */,
-				C584E6791E6AE9D700B1ABB7 /* HandlingMethods */,
-				C584E6771E6AE41B00B1ABB7 /* ErrorDispatcher.swift */,
-			);
-			path = Classes;
-			sourceTree = "<group>";
-		};
-		4A5687E719647C7EABCF15519722F8D6 /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				D01B1BF610056E410146A210D6C07198 /* ErrorDispatching.modulemap */,
-				95CEEB078703BD066CC1342916414110 /* ErrorDispatching.xcconfig */,
-				94DB04D9299132D142AFEB37BF52BCC3 /* ErrorDispatching-dummy.m */,
-				24F4322B315A7553774FC4D66979444B /* ErrorDispatching-prefix.pch */,
-				32EDFEB4AFBDB7DD863C55DC309A0004 /* ErrorDispatching-umbrella.h */,
-				99D95BC3F087C1546C19CE323386BBB2 /* Info.plist */,
+				A21477CBA0ACC10BE54C14E33A216122 /* ErrorDispatching.modulemap */,
+				A0155A82646CC4236A3C3B9CAF067152 /* ErrorDispatching.xcconfig */,
+				6034802A57C2334A59DF094B9378BBCC /* ErrorDispatching-dummy.m */,
+				53E14A5E9ABA3366BFAAA558552B4A41 /* ErrorDispatching-prefix.pch */,
+				B4C2832A66ABE63CDA2F403561C69037 /* ErrorDispatching-umbrella.h */,
+				063963ABFC67427B9E0273968309822D /* Info.plist */,
+				1EA68E2C5F406876493C91C99AC11F10 /* ResourceBundle-ErrorDispatching-Info.plist */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/ErrorDispatching";
+			sourceTree = "<group>";
+		};
+		433CD3331B6C3787F473C941B61FC68F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E6EE98446B568159EE277B68FD442AF0 /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E9BC0927630DA49312B141224008CCE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				03AAF76CA15825B565FAC5E90A703A97 /* ErrorDispatcher.swift */,
+				F0FAF42C1A93F2E159C8B977D1B2E2CD /* HandlingMethods */,
+				5FADCAAE9F6AACC0B07E69C7F94ED23A /* MethodProposers */,
+				7254D5B40FACC8F273A6F7F6CF6B19C9 /* SystemAlerts */,
+				6DCCC252CA1A56ACCBB3540125F01708 /* Utilities */,
+			);
+			name = Classes;
+			path = Classes;
+			sourceTree = "<group>";
+		};
+		5FADCAAE9F6AACC0B07E69C7F94ED23A /* MethodProposers */ = {
+			isa = PBXGroup;
+			children = (
+				2C141DE8D20CBEE18B1E51ED53D6B44A /* CompoundMethodProposer.swift */,
+				18FB5A5BD91131999870341CD2B24770 /* DebugMethodProposer.swift */,
+				22F85663939F8A401DE23A29D4A9A034 /* DefaultMethodProposer.swift */,
+				D6CAC370A585E393886A339EDA61F323 /* MethodProposing.swift */,
+			);
+			name = MethodProposers;
+			path = MethodProposers;
+			sourceTree = "<group>";
+		};
+		60E902E905F62DB50080ED52447AAEE2 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BFC3E5139D5C7D1151A6D7732E95413B /* ErrorDispatching */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 		69E71A77D6C32D9CA125E803D08E9443 /* Targets Support Files */ = {
@@ -156,42 +223,35 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */ = {
+		6DCCC252CA1A56ACCBB3540125F01708 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
-				CBB3DE36805AF21409EC968A9691732F /* Foundation.framework */,
+				3D5475A3DE11FC69C11F5464969009EF /* StandardErrorString.swift */,
 			);
-			name = iOS;
+			name = Utilities;
+			path = Utilities;
 			sourceTree = "<group>";
 		};
-		75E727FEBD2E2A2D25FB03E5116EB7F8 /* Products */ = {
+		7254D5B40FACC8F273A6F7F6CF6B19C9 /* SystemAlerts */ = {
 			isa = PBXGroup;
 			children = (
-				DE23F2F1514C3D62177C6E3EDF6EAD4E /* ErrorDispatching.framework */,
-				12476E2619EDE7EF8EA954D743C29B2F /* Pods_ErrorDispatching_Example.framework */,
-				68BB87E75093624EFD20BB4F0F201E0A /* Pods_ErrorDispatching_Tests.framework */,
+				250E8E53AC91F1551DEBE7671E451948 /* SystemAlertConfiguration.swift */,
+				9B1D55CB93C21012C3434AD146A3F66B /* UIAlertController+Configuration.swift */,
+				44B230870ED27AD157FDF8E96C9340D5 /* UIViewController+SystemAlert.swift */,
 			);
-			name = Products;
+			name = SystemAlerts;
+			path = SystemAlerts;
 			sourceTree = "<group>";
 		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				AFEAB967E02330231062EB2853009CE5 /* Development Pods */,
-				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				75E727FEBD2E2A2D25FB03E5116EB7F8 /* Products */,
+				20D32B3481C76EDB479E37AD6EACC95A /* Development Pods */,
+				433CD3331B6C3787F473C941B61FC68F /* Frameworks */,
+				E88C7B197067CD827310B888EE181486 /* Products */,
 				69E71A77D6C32D9CA125E803D08E9443 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		98BDC6E3CFC9A237E05A068E5A128CCF /* ErrorDispatching */ = {
-			isa = PBXGroup;
-			children = (
-				C584E6901E6B194200B1ABB7 /* Assets */,
-				2EDC32BDF81B645814663C569B09686B /* Classes */,
-			);
-			path = ErrorDispatching;
 			sourceTree = "<group>";
 		};
 		ACC161C01D9E67DBBF0BE11CD6AFBD89 /* Pods-ErrorDispatching_Example */ = {
@@ -212,65 +272,44 @@
 			path = "Target Support Files/Pods-ErrorDispatching_Example";
 			sourceTree = "<group>";
 		};
-		AFEAB967E02330231062EB2853009CE5 /* Development Pods */ = {
+		BFC3E5139D5C7D1151A6D7732E95413B /* ErrorDispatching */ = {
 			isa = PBXGroup;
 			children = (
-				1F367922F27524534AD4469F1B212ED6 /* ErrorDispatching */,
+				2758E7996F0E032E9CE1959B903F8731 /* Assets */,
 			);
-			name = "Development Pods";
+			name = ErrorDispatching;
+			path = ErrorDispatching;
 			sourceTree = "<group>";
 		};
-		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+		C71286A8619636885C4CD6EC70AA9921 /* ErrorDispatching */ = {
 			isa = PBXGroup;
 			children = (
-				7531C8F8DE19F1AA3C8A7AC97A91DC29 /* iOS */,
+				2B26F44745F5A965E0FBD70D482677C6 /* ErrorDispatching */,
+				60E902E905F62DB50080ED52447AAEE2 /* Resources */,
+				2BAC7D0B24CCBC799C2BB97DA7D43408 /* Support Files */,
 			);
-			name = Frameworks;
+			name = ErrorDispatching;
+			path = ../..;
 			sourceTree = "<group>";
 		};
-		C584E6791E6AE9D700B1ABB7 /* HandlingMethods */ = {
+		E6EE98446B568159EE277B68FD442AF0 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				C584E67B1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift */,
+				616BEB51ECCAD129BDBCB7A956B56CC6 /* Foundation.framework */,
+				7EC994CDC2D681BA26389F78A7E4B325 /* UIKit.framework */,
 			);
-			path = HandlingMethods;
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		C584E67A1E6AE9DD00B1ABB7 /* MethodProposers */ = {
+		E88C7B197067CD827310B888EE181486 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				C584E6831E6AF60500B1ABB7 /* MethodProposing.swift */,
-				C584E6811E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift */,
-				C584E68E1E6B05F900B1ABB7 /* DebugMethodProposer.swift */,
-				C584E6981E6B208F00B1ABB7 /* DefaultMethodProposer.swift */,
+				8051843F05D8D4943C9DC6043BF9EA1F /* ErrorDispatching.bundle */,
+				0DAB2FF627E509CC111F642A286CE3FF /* ErrorDispatching.framework */,
+				B8FFC780162DB934B0A9D53823F3A881 /* Pods_ErrorDispatching_Example.framework */,
+				F85F2C3EB1A03067B32F2B9E17417F7F /* Pods_ErrorDispatching_Tests.framework */,
 			);
-			path = MethodProposers;
-			sourceTree = "<group>";
-		};
-		C584E6851E6AF88600B1ABB7 /* SystemAlerts */ = {
-			isa = PBXGroup;
-			children = (
-				C584E6861E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift */,
-				C584E6881E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift */,
-				C584E68A1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift */,
-			);
-			path = SystemAlerts;
-			sourceTree = "<group>";
-		};
-		C584E6901E6B194200B1ABB7 /* Assets */ = {
-			isa = PBXGroup;
-			children = (
-				C584E6941E6B19CE00B1ABB7 /* StandardErrors.strings */,
-			);
-			path = Assets;
-			sourceTree = "<group>";
-		};
-		C584E6951E6B1D0B00B1ABB7 /* Utilities */ = {
-			isa = PBXGroup;
-			children = (
-				C584E6961E6B1D6700B1ABB7 /* StandardErrorString.swift */,
-			);
-			path = Utilities;
+			name = Products;
 			sourceTree = "<group>";
 		};
 		EFDE7921788366550D311BF411491D71 /* Pods-ErrorDispatching_Tests */ = {
@@ -291,6 +330,15 @@
 			path = "Target Support Files/Pods-ErrorDispatching_Tests";
 			sourceTree = "<group>";
 		};
+		F0FAF42C1A93F2E159C8B977D1B2E2CD /* HandlingMethods */ = {
+			isa = PBXGroup;
+			children = (
+				6667700CFFDDD87D9AE36CB0ACFF3184 /* ErrorHandlingMethod.swift */,
+			);
+			name = HandlingMethods;
+			path = HandlingMethods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -302,11 +350,11 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8120A81561031FEF44CC469A150869B7 /* Headers */ = {
+		16C3C57FC52FE58D26B031F543A20D7D /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FE774302E38B37022FBDA12D841EFCB5 /* ErrorDispatching-umbrella.h in Headers */,
+				92D3CEB8400BF8CF2AAC71FDD74CD0B9 /* ErrorDispatching-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -321,23 +369,6 @@
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		11333F966024011F3426F3242017FB6D /* ErrorDispatching */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7877BA785CB4C328A25BF9E268816661 /* Build configuration list for PBXNativeTarget "ErrorDispatching" */;
-			buildPhases = (
-				DA0A681BEDD973A4AAEDAB2F6660D1E9 /* Sources */,
-				28E266E2E0D7123EC058799A29FCC444 /* Frameworks */,
-				8120A81561031FEF44CC469A150869B7 /* Headers */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = ErrorDispatching;
-			productName = ErrorDispatching;
-			productReference = DE23F2F1514C3D62177C6E3EDF6EAD4E /* ErrorDispatching.framework */;
-			productType = "com.apple.product-type.framework";
-		};
 		7D4528C0D915B5D069D5523E06756E3B /* Pods-ErrorDispatching_Example */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5FA0AB9B6836CDF4198A1615591B7601 /* Build configuration list for PBXNativeTarget "Pods-ErrorDispatching_Example" */;
@@ -353,8 +384,25 @@
 			);
 			name = "Pods-ErrorDispatching_Example";
 			productName = "Pods-ErrorDispatching_Example";
-			productReference = 12476E2619EDE7EF8EA954D743C29B2F /* Pods_ErrorDispatching_Example.framework */;
+			productReference = B8FFC780162DB934B0A9D53823F3A881 /* Pods_ErrorDispatching_Example.framework */;
 			productType = "com.apple.product-type.framework";
+		};
+		8CC532C49DA2F4218A9EC7B4337CA34A /* ErrorDispatching-ErrorDispatching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4EC5A1900D6242DA9187CC5D4B3711AC /* Build configuration list for PBXNativeTarget "ErrorDispatching-ErrorDispatching" */;
+			buildPhases = (
+				1853DD3401317E998705FE1F822B647D /* Sources */,
+				8D04D14D859139EA39BB715778073DF8 /* Frameworks */,
+				AC9921C45CC8EFEC1DEC03887EC3E51E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ErrorDispatching-ErrorDispatching";
+			productName = "ErrorDispatching-ErrorDispatching";
+			productReference = 8051843F05D8D4943C9DC6043BF9EA1F /* ErrorDispatching.bundle */;
+			productType = "com.apple.product-type.bundle";
 		};
 		D62785027E01987832833D5E673BE51C /* Pods-ErrorDispatching_Tests */ = {
 			isa = PBXNativeTarget;
@@ -370,7 +418,26 @@
 			);
 			name = "Pods-ErrorDispatching_Tests";
 			productName = "Pods-ErrorDispatching_Tests";
-			productReference = 68BB87E75093624EFD20BB4F0F201E0A /* Pods_ErrorDispatching_Tests.framework */;
+			productReference = F85F2C3EB1A03067B32F2B9E17417F7F /* Pods_ErrorDispatching_Tests.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		DFEA143E97C5A8692E5C195B26FAB263 /* ErrorDispatching */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9F8D4E2472C310D890A7027B3E1425DF /* Build configuration list for PBXNativeTarget "ErrorDispatching" */;
+			buildPhases = (
+				F94FA1E319294156A74F221E4D63DA28 /* Sources */,
+				AE0CA7750E899D7910358E40A4718A16 /* Frameworks */,
+				12E50A2378C64DC2942DE9C0EE883BA5 /* Resources */,
+				16C3C57FC52FE58D26B031F543A20D7D /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				8D91D8AA3BC21BD9BCFD914306B8CFF4 /* PBXTargetDependency */,
+			);
+			name = ErrorDispatching;
+			productName = ErrorDispatching;
+			productReference = 0DAB2FF627E509CC111F642A286CE3FF /* ErrorDispatching.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -381,11 +448,6 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0700;
-				TargetAttributes = {
-					11333F966024011F3426F3242017FB6D = {
-						LastSwiftMigration = 0820;
-					};
-				};
 			};
 			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -395,18 +457,45 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 75E727FEBD2E2A2D25FB03E5116EB7F8 /* Products */;
+			productRefGroup = E88C7B197067CD827310B888EE181486 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				11333F966024011F3426F3242017FB6D /* ErrorDispatching */,
+				DFEA143E97C5A8692E5C195B26FAB263 /* ErrorDispatching */,
+				8CC532C49DA2F4218A9EC7B4337CA34A /* ErrorDispatching-ErrorDispatching */,
 				7D4528C0D915B5D069D5523E06756E3B /* Pods-ErrorDispatching_Example */,
 				D62785027E01987832833D5E673BE51C /* Pods-ErrorDispatching_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		12E50A2378C64DC2942DE9C0EE883BA5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				12E0B2F42325C5F0A128176F0483E2F7 /* ErrorDispatching.bundle in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AC9921C45CC8EFEC1DEC03887EC3E51E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				89EA5F35B15307EADA08064ACD16D770 /* StandardErrors.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		1853DD3401317E998705FE1F822B647D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		3EFD86B9B707FB90932C66A12A3989E0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -423,21 +512,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		DA0A681BEDD973A4AAEDAB2F6660D1E9 /* Sources */ = {
+		F94FA1E319294156A74F221E4D63DA28 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C584E67C1E6AE9EC00B1ABB7 /* ErrorHandlingMethod.swift in Sources */,
-				C584E6971E6B1D6700B1ABB7 /* StandardErrorString.swift in Sources */,
-				1487BDF4201A3D3EC8F33FBBF5B3DFD1 /* ErrorDispatching-dummy.m in Sources */,
-				C584E68B1E6AFF4500B1ABB7 /* UIViewController+SystemAlert.swift in Sources */,
-				C584E6871E6AF8A300B1ABB7 /* SystemAlertConfiguration.swift in Sources */,
-				C584E6841E6AF60500B1ABB7 /* MethodProposing.swift in Sources */,
-				C584E6821E6AEDDD00B1ABB7 /* CompoundMethodProposer.swift in Sources */,
-				C584E6991E6B208F00B1ABB7 /* DefaultMethodProposer.swift in Sources */,
-				C584E6781E6AE41B00B1ABB7 /* ErrorDispatcher.swift in Sources */,
-				C584E68F1E6B05F900B1ABB7 /* DebugMethodProposer.swift in Sources */,
-				C584E6891E6AF9B300B1ABB7 /* UIAlertController+Configuration.swift in Sources */,
+				D93B9A1797B4F4D5C70AB5740D323145 /* CompoundMethodProposer.swift in Sources */,
+				2CAB8C75D26CEC865A78AB428E6B02ED /* DebugMethodProposer.swift in Sources */,
+				7D8F614ACC4D93D7CE4EA6D4E931291E /* DefaultMethodProposer.swift in Sources */,
+				D25F773FDD390545C7CEF724E2244DEA /* ErrorDispatcher.swift in Sources */,
+				AB376E54E5F1F238D6D4A9562C1A4B27 /* ErrorDispatching-dummy.m in Sources */,
+				42189B953FC0D38FFB3FB2C5A488191D /* ErrorHandlingMethod.swift in Sources */,
+				70E5EBE1DB08914289A5CB0D076E7524 /* MethodProposing.swift in Sources */,
+				3159B01EE76B0523A6E8A496C403F572 /* StandardErrorString.swift in Sources */,
+				35DB9FC56A09B2401EA697605F73C703 /* SystemAlertConfiguration.swift in Sources */,
+				5F197E153F49326DEC6D8B2BB96EE6F3 /* UIAlertController+Configuration.swift in Sources */,
+				C79BD73EB58E4AE0D815B0DEFBCE8FF0 /* UIViewController+SystemAlert.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -447,23 +536,62 @@
 		0B102BCC10AEFDB262112164B2AD0094 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = ErrorDispatching;
-			target = 11333F966024011F3426F3242017FB6D /* ErrorDispatching */;
+			target = DFEA143E97C5A8692E5C195B26FAB263 /* ErrorDispatching */;
 			targetProxy = CCE0BDBAE02CAF44D20C374CBDC7B5BB /* PBXContainerItemProxy */;
+		};
+		8D91D8AA3BC21BD9BCFD914306B8CFF4 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "ErrorDispatching-ErrorDispatching";
+			target = 8CC532C49DA2F4218A9EC7B4337CA34A /* ErrorDispatching-ErrorDispatching */;
+			targetProxy = 000FE860DA7A5696578489B55F094512 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		C584E6941E6B19CE00B1ABB7 /* StandardErrors.strings */ = {
+		4CC8831941194671FA1F312FF8AE51BB /* StandardErrors.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				C584E6931E6B19CE00B1ABB7 /* en */,
+				68580AEBA12C92E5963A871F6C663468 /* StandardErrors.strings */,
 			);
 			name = StandardErrors.strings;
+			path = .;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		155174FC37ED358ED95C0AF0C9D35D4A /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0155A82646CC4236A3C3B9CAF067152 /* ErrorDispatching.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/ErrorDispatching/ErrorDispatching-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/ErrorDispatching/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/ErrorDispatching/ErrorDispatching.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = ErrorDispatching;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
 		1D5F586B902F65C11BCEB1A5F8766727 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 75AB3AAB80AD24FB2E1A5E441F318BA2 /* Pods-ErrorDispatching_Example.release.xcconfig */;
@@ -499,46 +627,10 @@
 			};
 			name = Release;
 		};
-		4CEF79BD91A43677AB22782530F7A3A1 /* Release */ = {
+		3146FDE07C1C2A62BBA7AE05B3858AB4 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = C325960029EBAE512C60EDF6FB0D222F /* Pods-ErrorDispatching_Tests.release.xcconfig */;
+			baseConfigurationReference = A0155A82646CC4236A3C3B9CAF067152 /* ErrorDispatching.xcconfig */;
 			buildSettings = {
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-ErrorDispatching_Tests/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-ErrorDispatching_Tests/Pods-ErrorDispatching_Tests.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_ErrorDispatching_Tests;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		5B11B114B2624ADDCEB59E00EA7BF936 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95CEEB078703BD066CC1342916414110 /* ErrorDispatching.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -568,11 +660,10 @@
 			};
 			name = Debug;
 		};
-		75080DDBE2656B2E7EBE59571C4E1C76 /* Release */ = {
+		4CEF79BD91A43677AB22782530F7A3A1 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 95CEEB078703BD066CC1342916414110 /* ErrorDispatching.xcconfig */;
+			baseConfigurationReference = C325960029EBAE512C60EDF6FB0D222F /* Pods-ErrorDispatching_Tests.release.xcconfig */;
 			buildSettings = {
-				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
@@ -584,17 +675,20 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/ErrorDispatching/ErrorDispatching-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/ErrorDispatching/Info.plist";
+				INFOPLIST_FILE = "Target Support Files/Pods-ErrorDispatching_Tests/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/ErrorDispatching/ErrorDispatching.modulemap";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-ErrorDispatching_Tests/Pods-ErrorDispatching_Tests.modulemap";
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = ErrorDispatching;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_ErrorDispatching_Tests;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -721,6 +815,40 @@
 			};
 			name = Debug;
 		};
+		A39B9B7C1AC0D7BD1761E563BD850FE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0155A82646CC4236A3C3B9CAF067152 /* ErrorDispatching.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ErrorDispatching";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ErrorDispatching/ResourceBundle-ErrorDispatching-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ErrorDispatching;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Release;
+		};
+		D4C57C1320F1701452123FA8FE0DD4D1 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A0155A82646CC4236A3C3B9CAF067152 /* ErrorDispatching.xcconfig */;
+			buildSettings = {
+				CONFIGURATION_BUILD_DIR = "$(BUILD_DIR)/$(CONFIGURATION)$(EFFECTIVE_PLATFORM_NAME)/ErrorDispatching";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/ErrorDispatching/ResourceBundle-ErrorDispatching-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				PRODUCT_NAME = ErrorDispatching;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				WRAPPER_EXTENSION = bundle;
+			};
+			name = Debug;
+		};
 		EA66F2D9D107C5DAFD9005047C22DCD9 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = FB12F67CF8B3C4054EFDDBB546577D2A /* Pods-ErrorDispatching_Tests.debug.xcconfig */;
@@ -777,6 +905,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		4EC5A1900D6242DA9187CC5D4B3711AC /* Build configuration list for PBXNativeTarget "ErrorDispatching-ErrorDispatching" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D4C57C1320F1701452123FA8FE0DD4D1 /* Debug */,
+				A39B9B7C1AC0D7BD1761E563BD850FE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		5FA0AB9B6836CDF4198A1615591B7601 /* Build configuration list for PBXNativeTarget "Pods-ErrorDispatching_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
@@ -786,11 +923,11 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7877BA785CB4C328A25BF9E268816661 /* Build configuration list for PBXNativeTarget "ErrorDispatching" */ = {
+		9F8D4E2472C310D890A7027B3E1425DF /* Build configuration list for PBXNativeTarget "ErrorDispatching" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				5B11B114B2624ADDCEB59E00EA7BF936 /* Debug */,
-				75080DDBE2656B2E7EBE59571C4E1C76 /* Release */,
+				3146FDE07C1C2A62BBA7AE05B3858AB4 /* Debug */,
+				155174FC37ED358ED95C0AF0C9D35D4A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -31,7 +31,11 @@ class StandardErrorString {
 //MARK: Supporting methods
 private extension StandardErrorString {
     static func loadString(for prefix: LocalizationPrefix, postfix: String) -> String {
+        let framework = Bundle(for: StandardErrorString.self)
+        let path = NSURL(fileURLWithPath: framework.resourcePath!).appendingPathComponent("ErrorDispatching.bundle")
+        let bundle = Bundle(url: path!)!
+        
         let key = "\(prefix.rawValue).\(postfix)"
-        return Bundle.main.localizedString(forKey: key, value: nil, table: "StandardErrors")
+        return bundle.localizedString(forKey: key, value: nil, table: "StandardErrors")
     }
 }

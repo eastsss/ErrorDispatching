@@ -3,7 +3,7 @@ This application makes use of the following third party libraries:
 
 ## ErrorDispatching
 
-Copyright (c) 2017 Anatoliy Radchenko <aradchenko@ipolecat.com>
+Copyright (c) 2017 Anatoliy Radchenko <anatox91@yandex.ru>
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

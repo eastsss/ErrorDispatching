@@ -3,20 +3,26 @@
   "version": "0.1.0",
   "summary": "A short description of ErrorDispatching.",
   "description": "TODO: Add long description of the pod here.",
-  "homepage": "https://github.com/Anatoliy Radchenko/ErrorDispatching",
+  "homepage": "https://github.com/eastsss/ErrorDispatching",
   "license": {
     "type": "MIT",
     "file": "LICENSE"
   },
   "authors": {
-    "Anatoliy Radchenko": "aradchenko@ipolecat.com"
+    "Anatoliy Radchenko": "anatox91@yandex.ru"
   },
   "source": {
-    "git": "https://github.com/Anatoliy Radchenko/ErrorDispatching.git",
+    "git": "https://github.com/eastsss/ErrorDispatching",
     "tag": "0.1.0"
   },
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ErrorDispatching/Classes/**/*"
+  "source_files": "ErrorDispatching/Classes/**/*",
+  "resource_bundles": {
+    "ErrorDispatching": [
+      "ErrorDispatching/Assets/**/*.{strings}"
+    ]
+  },
+  "frameworks": "UIKit"
 }
