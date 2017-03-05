@@ -29,7 +29,7 @@
       ],
       "resource_bundles": {
         "ErrorDispatching": [
-          "ErrorDispatching/Assets/**/*.{strings}"
+          "ErrorDispatching/Assets/Core/**/*.{strings}"
         ]
       }
     }

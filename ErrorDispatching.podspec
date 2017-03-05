@@ -32,7 +32,7 @@ TODO: Add long description of the pod here.
       ss.source_files  = 'ErrorDispatching/Classes/Core/**/*'
       ss.framework  = 'Foundation', 'UIKit'
       ss.resource_bundles = {
-          'ErrorDispatching' => ['ErrorDispatching/Assets/**/*.{strings}']
+          'ErrorDispatching' => ['ErrorDispatching/Assets/Core/**/*.{strings}']
       }
   end
 end
