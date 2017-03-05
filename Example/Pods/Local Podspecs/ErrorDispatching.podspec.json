@@ -32,6 +32,18 @@
           "ErrorDispatching/Assets/Core/**/*.{strings}"
         ]
       }
+    },
+    {
+      "name": "ReactiveSwift",
+      "source_files": "ErrorDispatching/Classes/ReactiveSwift/**/*",
+      "dependencies": {
+        "ErrorDispatching/Core": [
+
+        ],
+        "ReactiveSwift": [
+          "~> 1.0"
+        ]
+      }
     }
   ]
 }

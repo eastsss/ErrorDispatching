@@ -1,7 +1,7 @@
 use_frameworks!
 
 target 'ErrorDispatching_Example' do
-  pod 'ErrorDispatching', :path => '../'
+  pod 'ErrorDispatching/ReactiveSwift', :path => '../'
 
   target 'ErrorDispatching_Tests' do
     inherit! :search_paths

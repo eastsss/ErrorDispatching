@@ -1,18 +1,24 @@
 PODS:
-  - ErrorDispatching (0.1.0):
-    - ErrorDispatching/Core (= 0.1.0)
   - ErrorDispatching/Core (0.1.0)
+  - ErrorDispatching/ReactiveSwift (0.1.0):
+    - ErrorDispatching/Core
+    - ReactiveSwift (~> 1.0)
+  - ReactiveSwift (1.1.0):
+    - Result (~> 3.1)
+  - Result (3.1.0)
 
 DEPENDENCIES:
-  - ErrorDispatching (from `../`)
+  - ErrorDispatching/ReactiveSwift (from `../`)
 
 EXTERNAL SOURCES:
   ErrorDispatching:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ErrorDispatching: 7cbfde38e6de7f68f030e82a8a25e8696872f52d
+  ErrorDispatching: dfbb533e44766a8b20c171f2cc2addd9ff206830
+  ReactiveSwift: 2f4e4a02e5a5c87ea63f5fe667163ce2a67cbb57
+  Result: 4e3ed5995ed94d0cd6a09be9a431fce3f3624bbf
 
-PODFILE CHECKSUM: 39f320aae2acd9684f6abbdda2ece7e5af61743e
+PODFILE CHECKSUM: f8418897ee20481cb9f7ed69acfba6c7b1a1eacd
 
 COCOAPODS: 1.2.0

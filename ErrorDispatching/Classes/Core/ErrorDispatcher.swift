@@ -8,7 +8,11 @@
 
 import Foundation
 
-final public class ErrorDispatcher {
+public protocol MethodExecutor: class {
+    func execute(method: ErrorHandlingMethod)
+}
+
+open class ErrorDispatcher {
     public enum TrailingProposer {
         /**
             No trailing proposer will be used.
@@ -28,16 +32,14 @@ final public class ErrorDispatcher {
         case debug
     }
     
-    public typealias MethodExecutionBlock = ((ErrorHandlingMethod) -> Void)
-    
-    //MARK: Public properties
-    public var execution: MethodExecutionBlock?
+    public weak var executor: MethodExecutor?
     
     //MARK: Private properties
     private let mainProposer: MethodProposing
     
     //MARK: Initializer
-    public init(mainProposer: MethodProposing, trailingProposer: TrailingProposer = .`default`) {
+    public init(mainProposer: MethodProposing,
+                trailingProposer: TrailingProposer = .`default`) {
         switch trailingProposer {
         case .none:
             self.mainProposer = mainProposer
@@ -61,11 +63,11 @@ final public class ErrorDispatcher {
             return
         }
         
-        guard let block = execution else {
-            print("Method execution block wasn't initialized, all errors sent to this dispatcher will be ignored.")
+        guard let methodExecutor = executor else {
+            print("Executor is nil, all errors sent to this dispatcher will be ignored")
             return
         }
         
-        block(method)
+        methodExecutor.execute(method: method)
     }
 }

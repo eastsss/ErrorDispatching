@@ -35,4 +35,10 @@ TODO: Add long description of the pod here.
           'ErrorDispatching' => ['ErrorDispatching/Assets/Core/**/*.{strings}']
       }
   end
+  
+  s.subspec "ReactiveSwift" do |ss|
+      ss.source_files = 'ErrorDispatching/Classes/ReactiveSwift/**/*'
+      ss.dependency 'ErrorDispatching/Core'
+      ss.dependency 'ReactiveSwift', '~> 1.0'
+  end
 end

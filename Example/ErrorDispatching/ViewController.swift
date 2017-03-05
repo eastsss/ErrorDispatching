@@ -8,6 +8,7 @@
 
 import UIKit
 import ErrorDispatching
+import ReactiveSwift
 
 enum MyError: Error {
     case someError
@@ -15,21 +16,20 @@ enum MyError: Error {
 
 class ViewController: UIViewController {
 
-    let dispatcher: ErrorDispatcher = {
-        return ErrorDispatcher(mainProposer: MyAppMainProposer(), trailingProposer: .debug)
-    }()
+    let dispatcher: ErrorDispatcher = ErrorDispatcher(mainProposer: MyAppMainProposer())
+    let reactiveDispatcher: ReactiveErrorDispatcher = ReactiveErrorDispatcher(mainProposer: MyAppMainProposer())
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        dispatcher.execution = { [unowned self] method in
-            switch method {
-            case .systemAlert(let config):
-                self.showSystemAlert(with: config)
-            default:
-                return
-            }
-        }
+        //dispatcher.executor = self
+        
+        reactiveDispatcher.methodExecution.producer
+            .observe(on: UIScheduler())
+            .on(value: { [weak self] method in
+                self?.execute(method: method)
+            })
+            .start()
     }
     
     override func viewDidAppear(_ animated: Bool) {
@@ -39,7 +39,21 @@ class ViewController: UIViewController {
         //dispatcher.handle(error: MyError.someError)
         
         let nsError = NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotFindHost, userInfo: nil)
-        dispatcher.handle(error: nsError)
+        //dispatcher.handle(error: nsError)
+        
+        reactiveDispatcher.handle(error: nsError)
+    }
+}
+
+//MARK: MethodExecutor
+extension ViewController: MethodExecutor {
+    func execute(method: ErrorHandlingMethod) {
+        switch method {
+        case .systemAlert(let config):
+            self.showSystemAlert(with: config)
+        default:
+            return
+        }
     }
 }
 
