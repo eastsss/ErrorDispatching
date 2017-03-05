@@ -22,13 +22,13 @@
 
 /* Network error messages */
 
-"com.errordispatching.message.cant-find-host" = "Не получается найти хост";
+"com.errordispatching.message.cant-find-host" = "Не удается найти хост";
 
 "com.errordispatching.message.internet-connection-lost" = "Потеряно интернет соединение";
 
 "com.errordispatching.message.resource-unavailable" = "Запрошенный вами ресурс недоступен в данный момент. Попробуйте позже";
 
-"com.errordispatching.message.session-expired" = "Ваша сессия истекла. Пожалуйста, зайдите заново";
+"com.errordispatching.message.session-expired" = "Ваша сессия истекла. Пожалуйста, войдите заново";
 
 
 /* Action button titles */

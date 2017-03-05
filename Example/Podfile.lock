@@ -1,5 +1,7 @@
 PODS:
-  - ErrorDispatching (0.1.0)
+  - ErrorDispatching (0.1.0):
+    - ErrorDispatching/Core (= 0.1.0)
+  - ErrorDispatching/Core (0.1.0)
 
 DEPENDENCIES:
   - ErrorDispatching (from `../`)
@@ -9,7 +11,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ErrorDispatching: a4054540e7671634efea6632c632252378ad1371
+  ErrorDispatching: 7925503475c201ea129979833ad7ea64f6fe14d3
 
 PODFILE CHECKSUM: 39f320aae2acd9684f6abbdda2ece7e5af61743e
 

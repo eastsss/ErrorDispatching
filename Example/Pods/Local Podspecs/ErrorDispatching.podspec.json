@@ -1,7 +1,7 @@
 {
   "name": "ErrorDispatching",
   "version": "0.1.0",
-  "summary": "A short description of ErrorDispatching.",
+  "summary": "Reusable error handling in Swift",
   "description": "TODO: Add long description of the pod here.",
   "homepage": "https://github.com/eastsss/ErrorDispatching",
   "license": {
@@ -18,11 +18,20 @@
   "platforms": {
     "ios": "8.0"
   },
-  "source_files": "ErrorDispatching/Classes/**/*",
-  "resource_bundles": {
-    "ErrorDispatching": [
-      "ErrorDispatching/Assets/**/*.{strings}"
-    ]
-  },
-  "frameworks": "UIKit"
+  "default_subspecs": "Core",
+  "subspecs": [
+    {
+      "name": "Core",
+      "source_files": "ErrorDispatching/Classes/Core/**/*",
+      "frameworks": [
+        "Foundation",
+        "UIKit"
+      ],
+      "resource_bundles": {
+        "ErrorDispatching": [
+          "ErrorDispatching/Assets/**/*.{strings}"
+        ]
+      }
+    }
+  ]
 }
