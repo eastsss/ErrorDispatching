@@ -1,9 +1,8 @@
 # ErrorDispatching
 
-[![CI Status](http://img.shields.io/travis/Anatoliy Radchenko/ErrorDispatching.svg?style=flat)](https://travis-ci.org/Anatoliy Radchenko/ErrorDispatching)
-[![Version](https://img.shields.io/cocoapods/v/ErrorDispatching.svg?style=flat)](http://cocoapods.org/pods/ErrorDispatching)
-[![License](https://img.shields.io/cocoapods/l/ErrorDispatching.svg?style=flat)](http://cocoapods.org/pods/ErrorDispatching)
-[![Platform](https://img.shields.io/cocoapods/p/ErrorDispatching.svg?style=flat)](http://cocoapods.org/pods/ErrorDispatching)
+[![CI Status](http://img.shields.io/travis/eastsss/ErrorDispatching.svg?style=flat)](https://travis-ci.org/eastsss/ErrorDispatching)
+[![Swift v3](https://img.shields.io/badge/Swift-3-orange.svg?style=flat)](https://developer.apple.com/swift/)
+
 
 ## Example
 
