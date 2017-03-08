@@ -35,7 +35,7 @@ extension UnderlyingErrorExampleViewController: MethodExecutor {
     func execute(method: ErrorHandlingMethod) {
         switch method {
         case .systemAlert(let config):
-            self.showSystemAlert(with: config)
+            showSystemAlert(with: config)
         default:
             return
         }
