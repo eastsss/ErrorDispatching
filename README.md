@@ -4,11 +4,74 @@
 [![Swift v3](https://img.shields.io/badge/Swift-3-orange.svg?style=flat)](https://developer.apple.com/swift/)
 
 
+## What is this?
+
+A small library which simplifies error handling code in your view controllers/view models by using `Chain of Responsibility` pattern. It also allows you to reuse error handling code if you need the same behavior in another project.
+
+## How it works?
+
+One of the main things here are so called "proposers". Every proposer usually takes one specific type of error as an input and proposes method to handle this error - for example, "Show a system alert", or passes this error down by hierarchy. Executing this method(e.g. showing a system alert) is completely up to you. 
+
+Handling your own custom errors is pretty simple - create a class which implements `MethodProposing` protocol and return correct "proposition" for your errors. 
+
+```swift
+enum MyCustomError: Swift.Error {
+    case somethingBadHappened
+}
+
+class MyProposer: MethodProposing {
+    func proposeMethod(toHandle error: Error) -> Proposition? {
+        guard let myCustomError = error as? MyCustomError else {
+            return
+        }
+        
+        let config = SystemAlertConfiguration(
+            title: "Error",
+            message: "Oops! Something went wrong",
+            actionTitle: "OK"
+        )
+        
+        return .single(.systemAlert(config))
+    }
+}
+```
+
+Then you can pass this proposer to ErrorDispatcher initializator, as well as any other proposers you need. 
+
+```swift
+let compoundProposer = CompoundMethodProposer(proposers: [
+    MyProposer(),
+    NSURLErrorMethodProposer()
+])
+let dispatcher: ErrorDispatcher = ErrorDispatcher(proposer: compoundProposer)
+```
+
+To execute proposed methods, you should implement `MethodExecutor` protocol. This is a callback which will be called when dispatcher found a "method" to handle this error. Example:
+```swift
+extension ExampleViewController: MethodExecutor {
+    func execute(method: ErrorHandlingMethod) {
+        switch method {
+        case .systemAlert(let config):
+            self.showSystemAlert(with: config)
+        default:
+            return
+        }
+    }
+}
+```
+
+After that you can use ErrorDispatcher to handle your errors as following:
+```swift
+dispatcher.executor = self
+
+let nsError = NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotFindHost, userInfo: nil)
+dispatcher.handle(error: nsError)
+```
+
 ## Example
 
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+Just launch `Example/ErrorDispatching.xcworkspace`, build and run. Cocoapods are already installed.
 
-## Requirements
 
 ## Installation
 
@@ -26,3 +89,4 @@ Anatoliy Radchenko, anatox91@yandex.ru
 ## License
 
 ErrorDispatching is available under the MIT license. See the LICENSE file for more info.
+
