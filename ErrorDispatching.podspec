@@ -24,7 +24,7 @@ TODO: Add long description of the pod here.
   s.homepage         = 'https://github.com/eastsss/ErrorDispatching'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'Anatoliy Radchenko' => 'anatox91@yandex.ru' }
-  s.source           = { :git => 'https://github.com/eastsss/ErrorDispatching', :tag => s.version.to_s }
+  s.source           = { :git => 'https://github.com/eastsss/ErrorDispatching.git', :tag => s.version.to_s }
   s.ios.deployment_target = '8.0'
   s.default_subspec = "Core"
 
