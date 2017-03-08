@@ -11,7 +11,7 @@ import Foundation
 public class DebugMethodProposer: MethodProposing {
     public init() {}
     
-    public func proposeMethod(toHandle error: Error) -> ErrorHandlingMethod? {
+    public func proposeMethod(toHandle error: Error) -> Proposition? {
         let format = StandardErrorString.message(forKey: "debug-format")
         let message = String(format: format, "\(error)")
         
@@ -21,6 +21,6 @@ public class DebugMethodProposer: MethodProposing {
             actionTitle: StandardErrorString.action(forKey: "ok")
         )
         
-        return .systemAlert(config)
+        return .single(.systemAlert(config))
     }
 }

@@ -8,15 +8,22 @@
 
 import Foundation
 
-//TODO: add different return types - immediate return, delayed return, return on completion block, etc
 public protocol CustomHandlingMethod {}
+
+public enum Proposition {
+    case single(ErrorHandlingMethod)
+    case compound([ErrorHandlingMethod])
+}
 
 public enum ErrorHandlingMethod {
     case ignore
     case logout
     case systemAlert(SystemAlertConfiguration)
     case custom(CustomHandlingMethod)
-    case compound([ErrorHandlingMethod])
+}
+
+public protocol MethodProposing {
+    func proposeMethod(toHandle error: Error) -> Proposition?
 }
 
 

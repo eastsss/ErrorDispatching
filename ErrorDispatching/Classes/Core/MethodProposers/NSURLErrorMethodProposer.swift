@@ -11,7 +11,7 @@ import Foundation
 public class NSURLErrorMethodProposer: MethodProposing {
     public init() {}
     
-    public func proposeMethod(toHandle error: Error) -> ErrorHandlingMethod? {
+    public func proposeMethod(toHandle error: Error) -> Proposition? {
         let nsError = error as NSError
         
         guard nsError.domain == NSURLErrorDomain else {
@@ -20,7 +20,7 @@ public class NSURLErrorMethodProposer: MethodProposing {
         
         switch nsError.code {
         case NSURLErrorCancelled:
-            return .ignore
+            return .single(.ignore)
         case NSURLErrorCannotFindHost, NSURLErrorDNSLookupFailed:
             return systemAlertMethod(withMessageKey: "cant-find-host")
         case NSURLErrorTimedOut, NSURLErrorCannotConnectToHost,
@@ -36,13 +36,13 @@ public class NSURLErrorMethodProposer: MethodProposing {
 
 //MARK: Supporting methods
 private extension NSURLErrorMethodProposer {
-    func systemAlertMethod(withMessageKey key: String) -> ErrorHandlingMethod {
+    func systemAlertMethod(withMessageKey key: String) -> Proposition {
         let config = SystemAlertConfiguration(
             title: StandardErrorString.title(forKey: "default"),
             message: StandardErrorString.message(forKey: key),
             actionTitle: StandardErrorString.action(forKey: "ok")
         )
         
-        return .systemAlert(config)
+        return .single(.systemAlert(config))
     }
 }

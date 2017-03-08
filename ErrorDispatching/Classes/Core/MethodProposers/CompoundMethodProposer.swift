@@ -16,7 +16,7 @@ open class CompoundMethodProposer: MethodProposing {
     }
     
     //MARK: MethodProposing
-    public func proposeMethod(toHandle error: Error) -> ErrorHandlingMethod? {
+    public func proposeMethod(toHandle error: Error) -> Proposition? {
         for proposer in proposers {
             if let method = proposer.proposeMethod(toHandle: error) {
                 return method

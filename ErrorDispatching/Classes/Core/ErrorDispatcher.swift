@@ -58,7 +58,7 @@ open class ErrorDispatcher {
     
     //MARK: Error handling
     public func handle(error: Error) {
-        guard let method = mainProposer.proposeMethod(toHandle: error) else {
+        guard let proposedMethod = mainProposer.proposeMethod(toHandle: error) else {
             print("Unhandled error \(error)")
             return
         }
@@ -68,6 +68,14 @@ open class ErrorDispatcher {
             return
         }
         
-        methodExecutor.execute(method: method)
+        switch proposedMethod {
+        case .single(let method):
+            methodExecutor.execute(method: method)
+        case .compound(let methods):
+            for method in methods {
+                methodExecutor.execute(method: method)
+            }
+        }
+        
     }
 }

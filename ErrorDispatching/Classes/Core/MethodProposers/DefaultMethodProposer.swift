@@ -11,13 +11,13 @@ import Foundation
 public class DefaultMethodProposer: MethodProposing {
     public init() {}
     
-    public func proposeMethod(toHandle error: Error) -> ErrorHandlingMethod? {
+    public func proposeMethod(toHandle error: Error) -> Proposition? {
         let config = SystemAlertConfiguration(
             title: StandardErrorString.title(forKey: "default"),
             message: StandardErrorString.message(forKey: "default"),
             actionTitle: StandardErrorString.action(forKey: "ok")
         )
         
-        return .systemAlert(config)
+        return .single(.systemAlert(config))
     }
 }
