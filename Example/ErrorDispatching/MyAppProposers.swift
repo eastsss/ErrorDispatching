@@ -15,3 +15,9 @@ class MyAppMainProposer: CompoundMethodProposer {
         ])
     }
 }
+
+class MyAppEmptyProposer: CompoundMethodProposer {
+    init() {
+        super.init(proposers: [])
+    }
+}
