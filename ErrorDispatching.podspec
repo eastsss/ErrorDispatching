@@ -41,4 +41,10 @@ TODO: Add long description of the pod here.
       ss.dependency 'ErrorDispatching/Core'
       ss.dependency 'ReactiveSwift', '~> 1.0'
   end
+  
+  s.subspec "Moya" do |ss|
+      ss.source_files = 'ErrorDispatching/Classes/Moya/**/*'
+      ss.dependency 'ErrorDispatching/Core'
+      ss.dependency 'Moya', '~> 8.0.0'
+  end
 end

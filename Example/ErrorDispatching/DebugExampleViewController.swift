@@ -11,7 +11,11 @@ import ErrorDispatching
 
 class DebugExampleViewController: UIViewController {
     
-    let dispatcher: ErrorDispatcher = ErrorDispatcher(mainProposer: MyAppEmptyProposer(), trailingProposer: .debug)
+    let dispatcher: ErrorDispatcher = ErrorDispatcher(
+        proposer: MyAppEmptyProposer(),
+        modifier: nil,
+        trailingProposer: .debug
+    )
     
     override func viewDidLoad() {
         super.viewDidLoad()

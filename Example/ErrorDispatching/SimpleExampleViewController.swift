@@ -11,7 +11,7 @@ import ErrorDispatching
 
 class SimpleExampleViewController: UIViewController {
 
-    let dispatcher: ErrorDispatcher = ErrorDispatcher(mainProposer: MyAppMainProposer())
+    let dispatcher: ErrorDispatcher = ErrorDispatcher(proposer: MyAppMainProposer())
     
     override func viewDidLoad() {
         super.viewDidLoad()

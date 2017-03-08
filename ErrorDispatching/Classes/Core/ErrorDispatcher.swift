@@ -35,30 +35,36 @@ open class ErrorDispatcher {
     public weak var executor: MethodExecutor?
     
     //MARK: Private properties
-    private let mainProposer: MethodProposing
+    private let proposer: MethodProposing
+    private let modifier: ErrorModifying?
     
     //MARK: Initializer
-    public init(mainProposer: MethodProposing,
+    public init(proposer: MethodProposing,
+                modifier: ErrorModifying? = nil,
                 trailingProposer: TrailingProposer = .`default`) {
         switch trailingProposer {
         case .none:
-            self.mainProposer = mainProposer
+            self.proposer = proposer
         case .`default`:
-            self.mainProposer = CompoundMethodProposer(proposers: [
-                mainProposer,
+            self.proposer = CompoundMethodProposer(proposers: [
+                proposer,
                 DefaultMethodProposer()
             ])
         case .debug:
-            self.mainProposer = CompoundMethodProposer(proposers: [
-                mainProposer,
+            self.proposer = CompoundMethodProposer(proposers: [
+                proposer,
                 DebugMethodProposer()
             ])
         }
+        
+        self.modifier = modifier
     }
     
     //MARK: Error handling
     public func handle(error: Error) {
-        guard let proposedMethod = mainProposer.proposeMethod(toHandle: error) else {
+        let actualError = modifier?.modify(error: error) ?? error
+        
+        guard let proposedMethod = proposer.proposeMethod(toHandle: actualError) else {
             print("Unhandled error \(error)")
             return
         }

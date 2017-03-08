@@ -11,7 +11,7 @@ import ReactiveSwift
 import ErrorDispatching
 
 class ReactiveSwiftExampleViewController: UIViewController {
-    let reactiveDispatcher: ReactiveErrorDispatcher = ReactiveErrorDispatcher(mainProposer: MyAppMainProposer())
+    let reactiveDispatcher: ReactiveErrorDispatcher = ReactiveErrorDispatcher(proposer: MyAppMainProposer())
     
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -22,39 +22,49 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9p2-my-bNf">
-                                <rect key="frame" x="109.5" y="268.5" width="156" height="130"/>
+                                <rect key="frame" x="100.5" y="243.5" width="175" height="180"/>
                                 <subviews>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VdU-09-Mzm">
-                                        <rect key="frame" x="0.0" y="0.0" width="156" height="30"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="175" height="30"/>
                                         <state key="normal" title="Simple Example"/>
                                         <connections>
                                             <segue destination="DqG-4k-845" kind="show" id="OIk-aM-tKb"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="K0C-q1-KxS">
-                                        <rect key="frame" x="-0.5" y="49.5" width="156" height="30"/>
+                                        <rect key="frame" x="-0.5" y="49.5" width="175" height="30"/>
                                         <state key="normal" title="Debug Example"/>
                                         <connections>
                                             <segue destination="FQg-tS-0ZL" kind="show" id="WOW-xm-laE"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BPR-qU-agF">
-                                        <rect key="frame" x="0.0" y="100" width="156" height="30"/>
+                                        <rect key="frame" x="0.0" y="100" width="175" height="30"/>
                                         <state key="normal" title="ReactiveSwift Example"/>
                                         <connections>
                                             <segue destination="QTR-ZM-ba5" kind="show" id="nwl-bd-wOI"/>
                                         </connections>
                                     </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zQq-Na-5cw">
+                                        <rect key="frame" x="0.0" y="150" width="175" height="30"/>
+                                        <state key="normal" title="Underlying Error Example"/>
+                                        <connections>
+                                            <segue destination="95e-6e-v6B" kind="show" id="SBW-7f-a6k"/>
+                                        </connections>
+                                    </button>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="zQq-Na-5cw" secondAttribute="bottom" id="2En-0J-wTZ"/>
                                     <constraint firstItem="K0C-q1-KxS" firstAttribute="leading" secondItem="9p2-my-bNf" secondAttribute="leading" id="3Gn-Ma-PqP"/>
-                                    <constraint firstAttribute="bottom" secondItem="BPR-qU-agF" secondAttribute="bottom" id="8Cp-eG-Ww0"/>
+                                    <constraint firstAttribute="trailing" secondItem="zQq-Na-5cw" secondAttribute="trailing" id="5P7-Nk-eKp"/>
                                     <constraint firstAttribute="trailing" secondItem="VdU-09-Mzm" secondAttribute="trailing" id="LSX-7f-liq"/>
                                     <constraint firstItem="VdU-09-Mzm" firstAttribute="leading" secondItem="9p2-my-bNf" secondAttribute="leading" id="XRx-Rc-4qu"/>
+                                    <constraint firstItem="zQq-Na-5cw" firstAttribute="leading" secondItem="9p2-my-bNf" secondAttribute="leading" id="XuZ-FO-dMn"/>
                                     <constraint firstAttribute="trailing" secondItem="BPR-qU-agF" secondAttribute="trailing" id="Xv8-eo-GPh"/>
                                     <constraint firstItem="BPR-qU-agF" firstAttribute="top" secondItem="K0C-q1-KxS" secondAttribute="bottom" constant="20" id="jYj-qe-IP8"/>
                                     <constraint firstAttribute="trailing" secondItem="K0C-q1-KxS" secondAttribute="trailing" id="mo3-Wp-2oH"/>
+                                    <constraint firstItem="zQq-Na-5cw" firstAttribute="top" secondItem="BPR-qU-agF" secondAttribute="bottom" constant="20" id="msk-Nl-3V2"/>
                                     <constraint firstItem="VdU-09-Mzm" firstAttribute="top" secondItem="9p2-my-bNf" secondAttribute="top" id="pcf-4S-bC5"/>
                                     <constraint firstItem="BPR-qU-agF" firstAttribute="leading" secondItem="9p2-my-bNf" secondAttribute="leading" id="rVv-SI-3PM"/>
                                     <constraint firstItem="K0C-q1-KxS" firstAttribute="top" secondItem="VdU-09-Mzm" secondAttribute="bottom" constant="20" id="sja-bQ-Y7K"/>
@@ -127,6 +137,24 @@
             </objects>
             <point key="canvasLocation" x="1708" y="-57"/>
         </scene>
+        <!--Underlying Error Example-->
+        <scene sceneID="Npo-eF-Kif">
+            <objects>
+                <viewController title="Underlying Error Example" id="95e-6e-v6B" customClass="UnderlyingErrorExampleViewController" customModule="ErrorDispatching_Example" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zf5-am-DG3"/>
+                        <viewControllerLayoutGuide type="bottom" id="TLX-oe-xbr"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="isk-1B-Gj6">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zKm-vE-h5m" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2361" y="-293"/>
+        </scene>
         <!--Debug Example-->
         <scene sceneID="zGr-05-s6a">
             <objects>
@@ -143,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="utn-E0-2aL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2372" y="-645"/>
+            <point key="canvasLocation" x="2361" y="-984"/>
         </scene>
     </scenes>
 </document>

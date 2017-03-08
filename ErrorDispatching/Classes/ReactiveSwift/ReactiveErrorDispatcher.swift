@@ -14,10 +14,12 @@ open class ReactiveErrorDispatcher: ErrorDispatcher {
     
     fileprivate let _methodExecution: MutableProperty<ErrorHandlingMethod> = MutableProperty(.ignore)
     
-    override public init(mainProposer: MethodProposing,
+    override public init(proposer: MethodProposing,
+                         modifier: ErrorModifying? = nil,
                          trailingProposer: TrailingProposer = .`default`) {
         super.init(
-            mainProposer: mainProposer,
+            proposer: proposer,
+            modifier: modifier,
             trailingProposer: trailingProposer
         )
         
