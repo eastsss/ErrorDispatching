@@ -15,7 +15,7 @@ A small library which simplifies error handling code in your view controllers/vi
 
 One of the main things here are so called "proposers". Every proposer usually takes one specific type of error as an input and proposes method to handle this error - for example, "Show a system alert", or passes this error down by hierarchy. Executing this method(e.g. showing a system alert) is completely up to you. 
 
-Handling your own custom errors is pretty simple - create a class which implements `MethodProposing` protocol and return correct "proposition" for your errors. 
+Handling your own custom errors is pretty simple - create a class which implements `MethodProposing` protocol and return correct "proposition" for your errors: 
 
 ```swift
 enum MyCustomError: Swift.Error {
@@ -25,7 +25,7 @@ enum MyCustomError: Swift.Error {
 class MyProposer: MethodProposing {
     func proposeMethod(toHandle error: Error) -> Proposition? {
         guard let myCustomError = error as? MyCustomError else {
-            return
+            return nil
         }
         
         let config = SystemAlertConfiguration(
@@ -39,7 +39,7 @@ class MyProposer: MethodProposing {
 }
 ```
 
-Then you can pass this proposer to ErrorDispatcher initializator, as well as any other proposers you need. 
+Then you can pass this proposer to ErrorDispatcher initializator, as well as any other proposers you need: 
 
 ```swift
 let compoundProposer = CompoundMethodProposer(proposers: [
@@ -84,6 +84,12 @@ it, simply add the following line to your Podfile:
 ```ruby
 pod "ErrorDispatching"
 ```
+
+## TODO
+
+- Add more built-in proposers for system errors
+- More localizations as well
+
 
 ## Author
 
