@@ -20,12 +20,12 @@ Pod::Spec.new do |s|
   s.subspec "ReactiveSwift" do |ss|
       ss.source_files = 'ErrorDispatching/Classes/ReactiveSwift/**/*'
       ss.dependency 'ErrorDispatching/Core'
-      ss.dependency 'ReactiveSwift', '~> 1.0'
+      ss.dependency 'ReactiveSwift', '~> 1.1'
   end
   
   s.subspec "Moya" do |ss|
       ss.source_files = 'ErrorDispatching/Classes/Moya/**/*'
       ss.dependency 'ErrorDispatching/Core'
-      ss.dependency 'Moya', '~> 8.0.0'
+      ss.dependency 'Moya', '~> 8.0.3'
   end
 end
