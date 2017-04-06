@@ -16,17 +16,16 @@ class ReactiveSwiftExampleViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        reactiveDispatcher.methodExecution.producer
+        reactiveDispatcher.methodExecution
             .observe(on: UIScheduler())
-            .on(value: { [weak self] method in
+            .observeValues { [weak self] method in
                 switch method {
                 case .systemAlert(let config):
                     self?.showSystemAlert(with: config)
                 default:
                     return
                 }
-            })
-            .start()
+        }
     }
     
     override func viewDidAppear(_ animated: Bool) {
