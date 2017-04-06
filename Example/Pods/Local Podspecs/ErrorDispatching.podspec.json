@@ -1,8 +1,7 @@
 {
   "name": "ErrorDispatching",
   "version": "0.1.0",
-  "summary": "Reusable error handling in Swift",
-  "description": "TODO: Add long description of the pod here.",
+  "summary": "A simple and reusable error handling in Swift",
   "homepage": "https://github.com/eastsss/ErrorDispatching",
   "license": {
     "type": "MIT",
@@ -12,7 +11,7 @@
     "Anatoliy Radchenko": "anatox91@yandex.ru"
   },
   "source": {
-    "git": "https://github.com/eastsss/ErrorDispatching",
+    "git": "https://github.com/eastsss/ErrorDispatching.git",
     "tag": "0.1.0"
   },
   "platforms": {
