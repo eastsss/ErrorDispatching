@@ -11,10 +11,14 @@ import ReactiveSwift
 import ErrorDispatching
 
 class ReactiveSwiftExampleViewController: UIViewController {
-    let reactiveDispatcher: ReactiveErrorDispatcher = ReactiveErrorDispatcher(proposer: MyAppMainProposer())
+    var reactiveDispatcher: ReactiveErrorDispatcher!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ErrorDispatcher.preferences.trailingProposer = .default
+        
+        reactiveDispatcher = ReactiveErrorDispatcher(proposer: MyAppMainProposer())
         
         reactiveDispatcher.methodExecution
             .observe(on: UIScheduler())

@@ -16,14 +16,12 @@ open class ReactiveErrorDispatcher: ErrorDispatcher {
     fileprivate let methodExecutionObserver: Observer<ErrorHandlingMethod, NoError>
     
     override public init(proposer: MethodProposing,
-                         modifier: ErrorModifying? = nil,
-                         trailingProposer: TrailingProposer = .`default`) {
+                         modifier: ErrorModifying? = nil) {
         (methodExecution, methodExecutionObserver) = Signal<ErrorHandlingMethod, NoError>.pipe()
         
         super.init(
             proposer: proposer,
-            modifier: modifier,
-            trailingProposer: trailingProposer
+            modifier: modifier
         )
         
         self.executor = self

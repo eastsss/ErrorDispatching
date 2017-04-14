@@ -11,12 +11,17 @@ import ErrorDispatching
 import Moya
 
 class UnderlyingErrorExampleViewController: UIViewController {
-    let dispatcher: ErrorDispatcher = ErrorDispatcher(
-        proposer: MyAppMainProposer(),
-        modifier: MoyaNSURLErrorExtractor())
+    var dispatcher: ErrorDispatcher!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ErrorDispatcher.preferences.trailingProposer = .default
+        
+        dispatcher = ErrorDispatcher(
+            proposer: MyAppMainProposer(),
+            modifier: MoyaNSURLErrorExtractor()
+        )
         
         dispatcher.executor = self
     }

@@ -13,36 +13,22 @@ public protocol MethodExecutor: class {
 }
 
 open class ErrorDispatcher {
-    public enum TrailingProposer {
-        /**
-            No trailing proposer will be used.
-         */
-        case none
-        
-        /**
-            DefaultMethodProposer will be used as trailing one, thereby all unhandled errors will be
-            handled by showing system alert with generic message.
-         */
-        case `default`
-        
-        /**
-            DebugMethodProposer will be used as trailing one, thereby all unhandled errors will be
-            handled by showing system alert with error details.
-         */
-        case debug
-    }
+    public static var preferences: Preferences = Preferences()
     
     public weak var executor: MethodExecutor?
     
     //MARK: Private properties
     private let proposer: MethodProposing
     private let modifier: ErrorModifying?
+    private let _preferences: Preferences
     
     //MARK: Initializer
     public init(proposer: MethodProposing,
-                modifier: ErrorModifying? = nil,
-                trailingProposer: TrailingProposer = .`default`) {
-        switch trailingProposer {
+                modifier: ErrorModifying? = nil) {
+        //making a copy of shared preferences to use in this dispatcher
+        _preferences = type(of: self).preferences
+        
+        switch _preferences.trailingProposer {
         case .none:
             self.proposer = proposer
         case .`default`:

@@ -11,10 +11,14 @@ import ErrorDispatching
 
 class SimpleExampleViewController: UIViewController {
 
-    let dispatcher: ErrorDispatcher = ErrorDispatcher(proposer: MyAppMainProposer())
+    var dispatcher: ErrorDispatcher!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        ErrorDispatcher.preferences.trailingProposer = .default
+        
+        dispatcher = ErrorDispatcher(proposer: MyAppMainProposer())
         
         dispatcher.executor = self
     }
