@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ErrorDispatching'
-  s.version          = '0.1.1'
+  s.version          = '0.1.2'
   s.summary          = 'A simple and reusable error handling in Swift'
   s.homepage         = 'https://github.com/eastsss/ErrorDispatching'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
