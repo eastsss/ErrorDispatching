@@ -14,6 +14,12 @@ public struct SystemAlertAction {
     public let title: String?
     public let style: UIAlertActionStyle
     public let handler: Handler?
+    
+    public init(title: String?, style: UIAlertActionStyle, handler: Handler? = nil) {
+        self.title = title
+        self.style = style
+        self.handler = handler
+    }
 }
 
 public struct SystemAlertConfiguration {
