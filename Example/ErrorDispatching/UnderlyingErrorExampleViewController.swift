@@ -30,7 +30,7 @@ class UnderlyingErrorExampleViewController: UIViewController {
         super.viewDidAppear(animated)
         
         let nsError = NSError(domain: NSURLErrorDomain, code: NSURLErrorCannotFindHost, userInfo: nil)
-        let wrappedError = MoyaError.underlying(nsError)
+        let wrappedError = MoyaError.underlying(nsError, nil)
         dispatcher.handle(error: wrappedError)
     }
 }

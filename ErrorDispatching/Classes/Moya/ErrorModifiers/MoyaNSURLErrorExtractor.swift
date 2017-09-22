@@ -18,7 +18,7 @@ open class MoyaNSURLErrorExtractor: ErrorModifying {
         }
         
         switch moyaError {
-        case .underlying(let underlyingError):
+        case .underlying(let underlyingError, _):
             let nsError = underlyingError as NSError
             
             guard nsError.domain == NSURLErrorDomain else {

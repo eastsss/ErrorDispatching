@@ -13,7 +13,7 @@ import Result
 open class ReactiveErrorDispatcher: ErrorDispatcher {
     public let methodExecution: Signal<ErrorHandlingMethod, NoError>
     
-    fileprivate let methodExecutionObserver: Observer<ErrorHandlingMethod, NoError>
+    fileprivate let methodExecutionObserver: Signal<ErrorHandlingMethod, NoError>.Observer
     
     override public init(proposer: MethodProposing,
                          modifier: ErrorModifying? = nil) {

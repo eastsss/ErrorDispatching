@@ -9,7 +9,7 @@
 import UIKit
 
 public struct SystemAlertAction {
-    public typealias Handler = ((Void) -> Void)
+    public typealias Handler = (() -> Void)
     
     public let title: String?
     public let style: UIAlertActionStyle

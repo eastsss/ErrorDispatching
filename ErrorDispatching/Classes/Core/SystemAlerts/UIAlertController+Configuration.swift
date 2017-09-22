@@ -9,7 +9,7 @@
 import UIKit
 
 public extension UIAlertController {
-    public convenience init(configuration: SystemAlertConfiguration, dismissHandler: ((Void) -> Void)? = nil) {
+    public convenience init(configuration: SystemAlertConfiguration, dismissHandler: (() -> Void)? = nil) {
         self.init(
             title: configuration.title,
             message: configuration.message,
