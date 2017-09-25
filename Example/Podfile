@@ -1,12 +1,11 @@
 use_frameworks!
 
 target 'ErrorDispatching_Example' do
-  pod 'ErrorDispatching/ReactiveSwift', :path => '../'
-  pod 'ErrorDispatching/Moya', :path => '../'
-
-  target 'ErrorDispatching_Tests' do
-    inherit! :search_paths
-
+    platform :ios, '9.0'
+    pod 'ErrorDispatching/ReactiveSwift', :path => '../'
+    pod 'ErrorDispatching/Moya', :path => '../'
     
-  end
+    target 'ErrorDispatching_Tests' do
+        inherit! :search_paths
+    end
 end
