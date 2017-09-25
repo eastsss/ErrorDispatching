@@ -85,6 +85,13 @@ it, simply add the following line to your Podfile:
 pod "ErrorDispatching"
 ```
 
+## Versions
+
+| Swift Version  | Pod Version |
+| ----- | ----- |
+| 3.0  | 0.1.3+  |
+| 4.0  | 0.2.0+  |
+
 ## TODO
 
 - Add more built-in proposers for system errors
