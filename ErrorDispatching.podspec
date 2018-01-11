@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name             = 'ErrorDispatching'
-  s.version          = '0.2.0'
+  s.version          = '0.2.1'
   s.summary          = 'A simple and reusable error handling in Swift'
   s.homepage         = 'https://github.com/eastsss/ErrorDispatching'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
@@ -20,13 +20,13 @@ Pod::Spec.new do |s|
   s.subspec "ReactiveSwift" do |ss|
       ss.source_files = 'ErrorDispatching/Classes/ReactiveSwift/**/*'
       ss.dependency 'ErrorDispatching/Core'
-      ss.dependency 'ReactiveSwift', '~> 2.0'
+      ss.dependency 'ReactiveSwift', '~> 3.0'
       ss.dependency 'Result', '~> 3.0'
   end
   
   s.subspec "Moya" do |ss|
       ss.source_files = 'ErrorDispatching/Classes/Moya/**/*'
       ss.dependency 'ErrorDispatching/Core'
-      ss.dependency 'Moya', '~> 9.0'
+      ss.dependency 'Moya', '~> 11.0.0-beta.1'
   end
 end

@@ -4,6 +4,7 @@ import Result
 // MARK: - Method
 
 extension Method {
+    /// A Boolean value determining whether the request supports multipart.
     public var supportsMultipart: Bool {
         switch self {
         case .post, .put, .patch, .connect:
@@ -18,9 +19,6 @@ extension Method {
 
 /// Internal extension to keep the inner-workings outside the main Moya.swift file.
 public extension MoyaProvider {
-    // Yup, we're disabling these. The function is complicated, but breaking it apart requires a large effort.
-    // swiftlint:disable cyclomatic_complexity
-    // swiftlint:disable function_body_length
     /// Performs normal requests.
     func requestNormal(_ target: Target, callbackQueue: DispatchQueue?, progress: Moya.ProgressBlock?, completion: @escaping Moya.Completion) -> Cancellable {
         let endpoint = self.endpoint(target)
@@ -87,14 +85,13 @@ public extension MoyaProvider {
 
         return cancellableToken
     }
-    // swiftlint:enable cyclomatic_complexity
-    // swiftlint:enable function_body_length
 
+    // swiftlint:disable:next function_parameter_count
     private func performRequest(_ target: Target, request: URLRequest, callbackQueue: DispatchQueue?, progress: Moya.ProgressBlock?, completion: @escaping Moya.Completion, endpoint: Endpoint<Target>, stubBehavior: Moya.StubBehavior) -> Cancellable {
         switch stubBehavior {
         case .never:
             switch target.task {
-            case .requestPlain, .requestData, .requestParameters, .requestCompositeData, .requestCompositeParameters:
+            case .requestPlain, .requestData, .requestJSONEncodable, .requestCustomJSONEncodable, .requestParameters, .requestCompositeData, .requestCompositeParameters:
                 return self.sendRequest(target, request: request, callbackQueue: callbackQueue, progress: progress, completion: completion)
             case .uploadFile(let file):
                 return self.sendUploadFile(target, request: request, callbackQueue: callbackQueue, file: file, progress: progress, completion: completion)
@@ -185,22 +182,26 @@ private extension MoyaProvider {
 
     func sendUploadFile(_ target: Target, request: URLRequest, callbackQueue: DispatchQueue?, file: URL, progress: ProgressBlock? = nil, completion: @escaping Completion) -> CancellableToken {
         let uploadRequest = manager.upload(file, with: request)
-        let alamoRequest = target.validate ? uploadRequest.validate() : uploadRequest
+        let validationCodes = target.validationType.statusCodes
+        let alamoRequest = validationCodes.isEmpty ? uploadRequest : uploadRequest.validate(statusCode: validationCodes)
         return self.sendAlamofireRequest(alamoRequest, target: target, callbackQueue: callbackQueue, progress: progress, completion: completion)
     }
 
     func sendDownloadRequest(_ target: Target, request: URLRequest, callbackQueue: DispatchQueue?, destination: @escaping DownloadDestination, progress: ProgressBlock? = nil, completion: @escaping Completion) -> CancellableToken {
         let downloadRequest = manager.download(request, to: destination)
-        let alamoRequest = target.validate ? downloadRequest.validate() : downloadRequest
+        let validationCodes = target.validationType.statusCodes
+        let alamoRequest = validationCodes.isEmpty ? downloadRequest : downloadRequest.validate(statusCode: validationCodes)
         return self.sendAlamofireRequest(alamoRequest, target: target, callbackQueue: callbackQueue, progress: progress, completion: completion)
     }
 
     func sendRequest(_ target: Target, request: URLRequest, callbackQueue: DispatchQueue?, progress: Moya.ProgressBlock?, completion: @escaping Moya.Completion) -> CancellableToken {
         let initialRequest = manager.request(request as URLRequestConvertible)
-        let alamoRequest = target.validate ? initialRequest.validate() : initialRequest
+        let validationCodes = target.validationType.statusCodes
+        let alamoRequest = validationCodes.isEmpty ? initialRequest : initialRequest.validate(statusCode: validationCodes)
         return sendAlamofireRequest(alamoRequest, target: target, callbackQueue: callbackQueue, progress: progress, completion: completion)
     }
 
+    // swiftlint:disable:next cyclomatic_complexity
     func sendAlamofireRequest<T>(_ alamoRequest: T, target: Target, callbackQueue: DispatchQueue?, progress progressCompletion: Moya.ProgressBlock?, completion: @escaping Moya.Completion) -> CancellableToken where T: Requestable, T: Request {
         // Give plugins the chance to alter the outgoing request
         let plugins = self.plugins
